@@ -1,0 +1,24 @@
+<div data-part="breadcrumbs-navbar" id="helper-navbar" class="row fixed-nav-bar top">
+    <div class="col-xs-12 welcome-nav">
+        <div class="row">
+            <div class="col-xs-offset-1 col-sm-5 col-md-6 hidden-xs">
+                <div class="container">
+                    <% if $ClassName = GalleryPage %>
+                    <a href="$BaseHref">
+                        <h4 class="no-padding no-margin">
+                            <i class="fa fa-home vertical-align">&nbsp;</i> Home
+                        </h4>
+                    </a>
+                    <% end_if %>
+                    <%-- $Breadcrumbs --%>
+                    <%-- <h5 class="yellow">
+                        <i class="fa fa-arrow-down fa-2x">&nbsp;</i>Hide menu &amp; see Nairobi.
+                    </h5> --%>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <h5 class="white text-center">&nbsp;</h5>
+            </div>
+        </div>
+    </div>
+</div>

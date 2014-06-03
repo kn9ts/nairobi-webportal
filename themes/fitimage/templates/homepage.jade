@@ -1,0 +1,585 @@
+!!! 5
+html(lang='en-US')
+head
+
+    // Site Necessities 
+    title Nairobi | Home
+    base(href='http://phplab/silverstripe/')
+    //if lte IE 6
+    meta(name='generator', content='SilverStripe - http://silverstripe.org')
+    meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+    meta(name='x-page-id', content='1')
+    meta(name='x-cms-edit-link', content='admin/pages/edit/show/1')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(http-equiv='cleartype', content='on')
+    link(rel='shortcut icon', href='themes/fitiimage/images/html5logos/original.png')
+    //
+       Use Font Awesome Icons
+    //
+       HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //
+       if lt IE 9
+          script(src="assets/js/html5shiv.js")
+          script(src="assets/js/respond.min.js")
+          
+    //
+       Your stylesheets 
+    link(rel='stylesheet', type='text/css', href='/silverstripe/themes/fitiimage/css/bootstrap.css?m=1400849468')
+    link(rel='stylesheet', type='text/css', href='/silverstripe/themes/fitiimage/css/font-awesome.min.css?m=1400283668')
+    link(rel='stylesheet', type='text/css', href='/silverstripe/themes/fitiimage/css/application.css?m=1400859375')
+  body.HomePage
+    //
+       Breadcrumbs/Helper navigation bar
+    #helper-navbar.row.fixed-nav-bar.top(data-part='breadcrumbs-navbar')
+      .col-xs-12.welcome-nav
+        .row
+          .col-xs-offset-1.col-sm-5.col-md-6.hidden-xs
+            .container
+          .col-sm-5.col-md-5
+            h5.white.text-center Welcome to Nairobi City County. How can we help you?
+    //
+      Site page header, only available on the homepage
+    #page-header.row(role='header', data-part='site-header')
+      //
+         THE LOGO HEADER STARTS HERE 
+      .col-xs-12
+        .container
+          //
+             ncc logo header 
+          .row.space.header-bg
+            //
+               NCC HEADER LOGO 
+            .col-xs-3.col-xs-offset-0.col-sm-3.col-sm-offset-0.col-md-3.col-md-offset-0.col-lg-2.ncc-logo
+              img.img-responsive.white-bg(src='themes/fitiimage/images/ncclogo.png', alt='NCC logo')
+            //
+               Others: NCC Abbr, Login and gallery links 
+            .header-menu.col-sm-9.col-md-9.col-lg-10.hidden-xs.hiddn-sm
+              .row.text-align-center
+                .col-xs-12.col-sm-6
+                  b
+                    h3.no-padding.blue
+                      strong NAIROBI CITY COUNTY 
+                      small.no-padding.no-margin.green the green city under the sun
+                .col-xs-6.col-sm-3.grey-bg
+                  h3.icon-login
+                    | Login
+                    i.fa.fa-arrow-right.fa-1x
+                .col-xs-6.col-sm-3.yellow-bg
+                  h3.icon-gallery
+                    | See Nairobi
+                    i.fa.fa-th.fa-1x
+          //
+             toggle menu button 
+          .row.toggle-menu-btn
+            .col-xs-12.text-center
+              a.btn.btn-md
+                i.fa.fa-th.fa-1x  
+                | Menu
+      //
+         HOMEPAGE MENU CONTENT BOX STARTS HERE 
+      .col-xs-12.hidden-xs.hidden-sm.hidden-md.hidden-lg
+        .container.content.page-menu
+          //
+             Who the fuck is NCC?? 
+          .row
+            .col-xs-12
+              .row.space
+                //
+                   WHAT THE FUCK IS NCC?? 
+                .col-xs-12.col-sm-6.col-md-8
+                  .row.action-box.no-padding.no-margin.bg-warnin
+                    .hidden-xs.col-sm-2.col-lg-offset-1.col-lg-1.space
+                      img.img-responsive(src='themes/fitiimage/images/ncclogo-blue.png', max-width='60px')
+                    .col-xs-12.col-sm-10.col-lg-10.padding-top
+                      a.uppercase.abtncc.text-center(href='/silverstripe/#')
+                        h4 About Nairobi City County
+                //
+                   SEARCH BAR 
+                .col-xs-12.col-sm-6.col-md-4
+                  form#SearchForm_SearchForm.searchbox(role='form', action='/silverstripe/home/SearchForm', method='get', enctype='application/x-www-form-urlencoded')
+                    .form-group
+                      label.sr-only.col-xs-12(for='searchTerms')
+                      .col-xs-12
+                        .input-group.input-group-l
+                          span.input-group-addon
+                            i.fa.fa-search
+                          input#searchTerms.inputlg.form-control(type='text', name='Search', placeholder='Search something here...')
+          //
+             Page menu 
+          .row.margin-btm
+            .col-xs-12
+              .row
+                //
+                   App menu 
+                .col-xs-12.col-sm-12.col-md-8.col-lg-8.text-align-center
+                  .row.main-menu
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/services-and-payments/')
+                        .panel.panel-default
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-info-circle.fa-4x.grey(green='green')  
+                              .col-xs-9
+                                h4
+                                  span Services & Payments
+                            .sr-only
+                              p
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/opportunities/')
+                        .panel.panel-default
+                          .panel-body
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-briefcase.fa-4x.grey(yellow='yellow')  
+                              .col-xs-9
+                                h4
+                                  span Opportunities
+                            .sr-only
+                              p
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/explore-nairobi/')
+                        .panel.panel-default
+                          .panel-body
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-road.fa-4x.grey(green='green')  
+                              .col-xs-9
+                                h4
+                                  span Explore Nairobi
+                            .sr-only
+                              p
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/news-and-updates/')
+                        .panel.panel-default
+                          .panel-body
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-microphone.fa-4x.grey(red='red')  
+                              .col-xs-9
+                                h4
+                                  span News & Updates
+                            .sr-only
+                              p News | Blogs | Public notices
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/whats-happening/')
+                        .panel.panel-default
+                          .panel-body
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-calendar.fa-4x.grey(orange='orange')  
+                              .col-xs-9
+                                h4
+                                  span Events
+                            .sr-only
+                              p
+                    .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                      a(href='/silverstripe/home/information-and-contacts/')
+                        .panel.panel-default
+                          .panel-body
+                            .row.page-menu-title
+                              .col-xs-3
+                                i.fa.fa-info-circle.fa-4x.grey(blue='blue')  
+                              .col-xs-9
+                                h4
+                                  span Information & Contacts
+                            .sr-only
+                              p
+                //
+                   Blog posts 
+                .col-xs-12.col-sm-12.col-md-4.col-lg-4.blog-section
+                  h3.no-padding.no-margin
+                    | News, Events and Updates
+                    br
+                    small.muted The little things that matter.
+                  hr.margin
+                  .row.blog-row
+                    .col-xs-12.col-sm-6.col-md-12.padding
+                      .blog-landing.border-color-left.the-box-theme.blog-bordered.clearfix.curves
+                        .blog-description
+                          .row
+                            .col-xs-12.blog-pn.blog-pn-header
+                              h4
+                                a(href='/silverstripe/home/news-and-updates/land-section/there-will-always-be-darkness/') There will always be darkness
+                            .col-xs-12.blog-pn.blog-pn-author
+                              small.author.additional.text-muted.clearfix
+                                | Posted by
+                                a.text-muted.grey(href='/silverstripe/home/news-and-updates/land-section/there-will-always-be-darkness/')
+                                  em Eugene Mutai
+                                br
+                                span.pull-right 17 May 2014
+                        .blog-image
+                          a(href='/silverstripe/#')
+                            img.img-responsive(src='themes/fitiimage/images/ten.jpg', alt='Image blog')
+                    .col-xs-12.col-sm-6.col-md-12.padding
+                      .blog-landing.border-color-left.the-box-theme.blog-bordered.clearfix.curves
+                        .blog-description
+                          .row
+                            .col-xs-12.blog-pn.blog-pn-header
+                              h4
+                                a(href='/silverstripe/home/news-and-updates/land-section/hold-yourself-to-a-higher-standard/') Hold Yourself To A Higher Standard
+                            .col-xs-12.blog-pn.blog-pn-author
+                              small.author.additional.text-muted.clearfix
+                                | Posted by
+                                a.text-muted.grey(href='/silverstripe/home/news-and-updates/land-section/hold-yourself-to-a-higher-standard/')
+                                  em Eugene Mutai
+                                br
+                                span.pull-right 14 May 2014
+                        .blog-image
+                          a(href='/silverstripe/#')
+                            img(src='/silverstripe/assets/Others/_resampled/SetRatioSize300400-img-05.jpg', alt='img-05.jpg')
+          //
+             Page Mini Menu 
+          .row
+            .col-xs-12.col-lg-8.text-align-center
+              #mini-menu.row.mini-menu.HomePage
+                a(href='/silverstripe/home/payments/')
+                  .col-xs-6.col-sm-3.col-md-3
+                    .panel.panel-default.blue-bg
+                      .panel-body
+                        .row.page-menu-title
+                          .col-xs-3
+                            i.fa.fa-money.fa-2x.white  
+                          .col-xs-9
+                            h4
+                              span Payments
+                a(href='/silverstripe/home/visitors/')
+                  .col-xs-6.col-sm-3.col-md-3
+                    .panel.panel-default.red-bg
+                      .panel-body
+                        .row.page-menu-title
+                          .col-xs-3
+                            i.fa.fa-share-square.fa-2x.white  
+                          .col-xs-9
+                            h4
+                              span Visitors
+                a(href='/silverstripe/home/maps/')
+                  .col-xs-6.col-sm-3.col-md-3
+                    .panel.panel-default.green-bg
+                      .panel-body
+                        .row.page-menu-title
+                          .col-xs-3
+                            i.fa.fa-map-marker.fa-2x.white  
+                          .col-xs-9
+                            h4
+                              span Maps
+                a(href='/silverstripe/home/facilities/')
+                  .col-xs-6.col-sm-3.col-md-3
+                    .panel.panel-default.yellow-bg
+                      .panel-body
+                        .row.page-menu-title
+                          .col-xs-3
+                            i.fa.fa-hospital-o.fa-2x.white  
+                          .col-xs-9
+                            h4
+                              span Facilities
+    //
+       Content of the site goes in here
+    .page-content.pale-grey-bg.hidden-md.hidden-lg(data-part='page-content')
+      #page-content.container-fluid.content
+        //
+           Who the fuck is NCC?? 
+        .row
+          .col-xs-12
+            .row.space
+              //
+                 WHAT THE FUCK IS NCC?? 
+              .col-xs-12.col-sm-6.col-md-8
+                .row.action-box.no-padding.no-margin.bg-warnin
+                  .hidden-xs.col-sm-2.col-lg-offset-1.col-lg-1.space
+                    img.img-responsive(src='themes/fitiimage/images/ncclogo-blue.png', max-width='60px')
+                  .col-xs-12.col-sm-10.col-lg-10.padding-top
+                    a.uppercase.abtncc.text-center(href='/silverstripe/#')
+                      h4 About Nairobi City County
+              //
+                 SEARCH BAR 
+              .col-xs-12.col-sm-6.col-md-4
+                form#SearchForm_SearchForm.searchbox(role='form', action='/silverstripe/home/SearchForm', method='get', enctype='application/x-www-form-urlencoded')
+                  .form-group
+                    label.sr-only.col-xs-12(for='searchTerms')
+                    .col-xs-12
+                      .input-group.input-group-l
+                        span.input-group-addon
+                          i.fa.fa-search
+                        input#searchTerms.inputlg.form-control(type='text', name='Search', placeholder='Search something here...')
+        //
+           Page menu 
+        .row.margin-btm
+          .col-xs-12
+            .row
+              //
+                 App menu 
+              .col-xs-12.col-sm-12.col-md-8.col-lg-8.text-align-center
+                .row.main-menu
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/services-and-payments/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-info-circle.fa-4x.grey(green='green')  
+                            .col-xs-9
+                              h4
+                                span Services & Payments
+                          .sr-only
+                            p
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/opportunities/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-briefcase.fa-4x.grey(yellow='yellow')  
+                            .col-xs-9
+                              h4
+                                span Opportunities
+                          .sr-only
+                            p
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/explore-nairobi/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-road.fa-4x.grey(green='green')  
+                            .col-xs-9
+                              h4
+                                span Explore Nairobi
+                          .sr-only
+                            p
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/news-and-updates/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-microphone.fa-4x.grey(red='red')  
+                            .col-xs-9
+                              h4
+                                span News & Updates
+                          .sr-only
+                            p News | Blogs | Public notices
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/whats-happening/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-calendar.fa-4x.grey(orange='orange')  
+                            .col-xs-9
+                              h4
+                                span Events
+                          .sr-only
+                            p
+                  .col-xs-12.col-sm-6.col-md-6.SectionHolder
+                    a(href='/silverstripe/home/information-and-contacts/')
+                      .panel.panel-default
+                        .panel-body
+                          .row.page-menu-title
+                            .col-xs-3
+                              i.fa.fa-info-circle.fa-4x.grey(blue='blue')  
+                            .col-xs-9
+                              h4
+                                span Information & Contacts
+                          .sr-only
+                            p
+              //
+                 Blog posts 
+              .col-xs-12.col-sm-12.col-md-4.col-lg-4.blog-section
+                h3.no-padding.no-margin
+                  | News, Events and Updates
+                  br
+                  small.muted The little things that matter.
+                hr.margin
+                .row.blog-row
+                  .col-xs-12.col-sm-6.col-md-12.padding
+                    .blog-landing.border-color-left.the-box-theme.blog-bordered.clearfix.curves
+                      .blog-description
+                        .row
+                          .col-xs-12.blog-pn.blog-pn-header
+                            h4
+                              a(href='/silverstripe/home/news-and-updates/land-section/there-will-always-be-darkness/') There will always be darkness
+                          .col-xs-12.blog-pn.blog-pn-author
+                            small.author.additional.text-muted.clearfix
+                              | Posted by
+                              a.text-muted.grey(href='/silverstripe/home/news-and-updates/land-section/there-will-always-be-darkness/')
+                                em Eugene Mutai
+                              br
+                              span.pull-right 17 May 2014
+                      .blog-image
+                        a(href='/silverstripe/#')
+                          img.img-responsive(src='themes/fitiimage/images/ten.jpg', alt='Image blog')
+                  .col-xs-12.col-sm-6.col-md-12.padding
+                    .blog-landing.border-color-left.the-box-theme.blog-bordered.clearfix.curves
+                      .blog-description
+                        .row
+                          .col-xs-12.blog-pn.blog-pn-header
+                            h4
+                              a(href='/silverstripe/home/news-and-updates/land-section/hold-yourself-to-a-higher-standard/') Hold Yourself To A Higher Standard
+                          .col-xs-12.blog-pn.blog-pn-author
+                            small.author.additional.text-muted.clearfix
+                              | Posted by
+                              a.text-muted.grey(href='/silverstripe/home/news-and-updates/land-section/hold-yourself-to-a-higher-standard/')
+                                em Eugene Mutai
+                              br
+                              span.pull-right 14 May 2014
+                      .blog-image
+                        a(href='/silverstripe/#')
+                          img(src='/silverstripe/assets/Others/_resampled/SetRatioSize300400-img-05.jpg', alt='img-05.jpg')
+        //
+           Page Mini Menu 
+        .row
+          .col-xs-12.col-lg-8.text-align-center
+            #mini-menu.row.mini-menu.HomePage
+              a(href='/silverstripe/home/payments/')
+                .col-xs-6.col-sm-3.col-md-3
+                  .panel.panel-default.blue-bg
+                    .panel-body
+                      .row.page-menu-title
+                        .col-xs-3
+                          i.fa.fa-money.fa-2x.white  
+                        .col-xs-9
+                          h4
+                            span Payments
+              a(href='/silverstripe/home/visitors/')
+                .col-xs-6.col-sm-3.col-md-3
+                  .panel.panel-default.red-bg
+                    .panel-body
+                      .row.page-menu-title
+                        .col-xs-3
+                          i.fa.fa-share-square.fa-2x.white  
+                        .col-xs-9
+                          h4
+                            span Visitors
+              a(href='/silverstripe/home/maps/')
+                .col-xs-6.col-sm-3.col-md-3
+                  .panel.panel-default.green-bg
+                    .panel-body
+                      .row.page-menu-title
+                        .col-xs-3
+                          i.fa.fa-map-marker.fa-2x.white  
+                        .col-xs-9
+                          h4
+                            span Maps
+              a(href='/silverstripe/home/facilities/')
+                .col-xs-6.col-sm-3.col-md-3
+                  .panel.panel-default.yellow-bg
+                    .panel-body
+                      .row.page-menu-title
+                        .col-xs-3
+                          i.fa.fa-hospital-o.fa-2x.white  
+                        .col-xs-9
+                          h4
+                            span Facilities
+    #navigation-bar.row.fixed-nav-bar.bottom(role='nav-menu', data-part='fixed-footer-nav-menu')
+      //
+        The menu icon
+      .col-md-1.hidden-xs.hidden-sm.text-align-center
+        a.yellow(href='http://phplab/silverstripe/')
+          i.fa.fa-home.fa-2x.yellow
+          p.no-margin.no-padding.yellow Home
+      //
+         Time and weather
+      .col-md-2.hidden-xs.hidden-sm.text-center.yellow-bg
+        h2.moment-in-time.grey The time is?
+      //
+         The navigation menu
+      .col-sm-6.col-md-5.hidden-xs
+        .row
+          //
+             Previous scroller
+          .col-xs-1
+            p.arrow
+              i#nav-menu-prev.fa.fa-arrow-left.fa-3x.pull-left.grey-arrow
+          //
+             The nav menu
+          .col-xs-10
+            #nav-menu.nav-menu.text-align-center
+              .nav-icon
+                a(href='/silverstripe/home/services-and-payments/')
+                  i.fa.fa-info-circle.fa-2x
+                  p Services & Payments
+              .nav-icon
+                a(href='/silverstripe/home/opportunities/')
+                  i.fa.fa-briefcase.fa-2x
+                  p Opportunities
+              .nav-icon
+                a(href='/silverstripe/home/explore-nairobi/')
+                  i.fa.fa-road.fa-2x
+                  p Explore Nairobi
+              .nav-icon
+                a(href='/silverstripe/home/news-and-updates/')
+                  i.fa.fa-microphone.fa-2x
+                  p News & Updates
+              .nav-icon
+                a(href='/silverstripe/home/whats-happening/')
+                  i.fa.fa-calendar.fa-2x
+                  p Events
+              .nav-icon
+                a(href='/silverstripe/home/information-and-contacts/')
+                  i.fa.fa-info-circle.fa-2x
+                  p Information & Contacts
+              .nav-icon
+                a(href='/silverstripe/home/payments/')
+                  i.fa.fa-money.fa-2x
+                  p Payments
+              .nav-icon
+                a(href='/silverstripe/home/visitors/')
+                  i.fa.fa-share-square.fa-2x
+                  p Visitors
+              .nav-icon
+                a(href='/silverstripe/home/maps/')
+                  i.fa.fa-map-marker.fa-2x
+                  p Maps
+              .nav-icon
+                a(href='/silverstripe/home/facilities/')
+                  i.fa.fa-hospital-o.fa-2x
+                  p Facilities
+          //
+             Next Scroller
+          .col-xs-1
+            p.arrow
+              i#nav-menu-next.fa.fa-arrow-right.fa-3x.pull-right.grey-arrow
+      //
+         Emergency Services and social-icons
+      .col-sm-6.col-md-4
+        .row
+          .col-xs-6.col-sm-7
+            #social-icons
+              .row.text-center
+                .col-xs-4
+                  i.fa.fa-facebook-square.fa-2x
+                .col-xs-4
+                  i.fa.fa-twitter.fa-2x
+                .col-xs-4
+                  i.fa.fa-google-plus-square.fa-2x
+          .col-xs-6.col-sm-5.no-padding.no-margin
+            .nav-alert.text-align-center.clearfix
+              p.uppercase.text-justify
+                i.fa.fa-bell.fa-2x.fa-borer.pull-left
+                span.clearfix Emergency Services
+    //
+       App's dependencies(libraries) and business logics
+    application-engine(description='All the application\'s JS files fall here')
+      //
+         jQuery library
+      script(type='text/javascript', src='themes/fitiimage/js/jquery.min.js')
+      //
+         For cookies and touch support 
+      script(type='text/javascript', src='themes/fitiimage/js/jquery.cookie.js')
+      script(type='text/javascript', src='themes/fitiimage/js/moment.min.js')
+      //
+         For CAUSEROL
+      script(type='text/javascript', src='themes/fitiimage/js/jquery.carouFredSel-6.2.1-packed.js')
+      //
+         Keep sizes of font style in the document 
+      //
+         consistent with the size of the page
+      script(type='text/javascript', src='themes/fitiimage/js/flowtype.js')
+      //
+         Your app functions script 
+      script(type='text/javascript', src='themes/fitiimage/js/application.js')
+      script(type='text/javascript', src='themes/fitiimage/js/execute.js')

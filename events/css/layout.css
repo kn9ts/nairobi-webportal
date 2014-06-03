@@ -1,0 +1,18 @@
+.content, .sidebar {
+    border-radius: 7px;
+}
+#eventlist_container {
+    width:70%;
+    border-right:1px dotted gray;
+    padding-right:15px;
+    float:left;
+}
+#calendar_container {
+    /* border:1px solid red; */
+    width:26%;
+    margin-left: 75%;
+    height:270px;
+}
+.setime {
+    font-weight:700;
+}

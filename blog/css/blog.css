@@ -1,0 +1,16 @@
+.BlogError {
+	text-align: center;
+}
+
+.BlogError p {
+	color: #fff;
+	display: inline;
+	background-color:	#f77;
+	padding: 7px;
+	font-weight:bold;
+}
+
+.edit-post {
+	clear:both;
+	padding-top:10px;
+}
