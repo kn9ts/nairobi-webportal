@@ -15,13 +15,6 @@ $(function() {
     if ($('body').hasClass('HomePage') && window.innerWidth >= 768) {
         $('#page-header').height(function() {
             var h = parseInt($(window).width()) > 768 ? $(document).height() : $(window).height() / 2;
-            //- $('#navigation-bar').height();
-            // window.onresize = function(event) {
-            //     $('#page-header').height(function() {
-            //         var nh = $('body').height();
-            //         return nh;
-            //     }); //parseInt(h)
-            // };
             return h; //parseInt(h) + 1;
         });
     } else {
@@ -47,7 +40,7 @@ $(function() {
         windowAnimation();
     }
 
-    //CAUSEROL
+    // FIXED MENU CAUSEROL
     // Using default configuration
     $("#nav-menu").carouFredSel({
         width: '100%',
@@ -70,6 +63,7 @@ $(function() {
         //- pagination  : "#foo2_pag"
     });
 
+    // The Clock
     setInterval(function() {
         $('.moment-in-time').html(function() {
             return moment().format('h:mm a');

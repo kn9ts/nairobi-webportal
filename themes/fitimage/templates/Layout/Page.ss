@@ -7,7 +7,7 @@
             <div class="blog-container">
                 $Content
                 <% if $Form %>
-                <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 white-bg">
                     $Form
                 </div>
                 <% end_if %>

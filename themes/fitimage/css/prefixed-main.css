@@ -19,16 +19,13 @@ __________________________________________________________*/
 }
 .fitimage h2 {
     font-weight: normal;
-    font-size: 2.4.em;
+    font-size: 1.5em;
     text-transform: lowercase;
+    letter-spacing: 0.01em;
     color: #FFDE00;
     background-color: #1B1B1B;
     margin-bottom: 1em;
-    padding-left: 0.3em;
-    font-size: 2em;
-    padding-right: 0.3em;
-    letter-spacing: 0.08em;
-    padding-bottom: 0.2em;
+    padding: 0.2em 0.3em;
     /*display: inline;*/
 }
 .fitimage h3 {
@@ -65,13 +62,20 @@ __________________________________________________________*/
     font-style: normal;
 }
 .fitimage p {
-    font-size: 0.8em;
-    color: #7A7A7A;
+    font-size: 0.65em;
+    color: #232323;
 }
 .fitimage ul {
     text-align: left;
     width: 100%;
     margin: auto;
+    /*margin-left: 1em;*/
+}
+.fitimage ol + ul {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    margin-left: 1em;
 }
 .fitimage ul li {
     width: 13em;
@@ -89,7 +93,7 @@ __________________________________________________________*/
     font-style: normal;
     font-weight: bold;
     display: inline-block;
-    height: 8em;
+    min-height: 4em;
     position: relative;
     vertical-align: top;
     margin-left: -2em;
@@ -101,56 +105,61 @@ __________________________________________________________*/
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-top: 15px solid white;
-    border-right: 10px solid transparent;
-    margin-top: -1em;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 5.4em;
+    border-top: 8px solid transparent;
+    border-left: 10px solid white;
+    border-bottom: 8px solid transparent;
+    margin-top: 10%;
 }
-.fitimage ul a {
+.fitimage ul li a, .fitimage ul li p {
     display: inline-block;
     text-decoration: none;
     color: #1B1B1B;
     font-size: 0.8em;
-    margin-top: 0em;
-    background-image: url(../Images/Icon_PH.png);
+    font-weight: bolder;
+    line-height: 0.95em;
+    margin-top: 0;
+    padding-left: 7em;
+    padding-bottom: 47px;
+    max-height: 5.5em;
+    background-image: url(../images/Icon_PH.png);
     background-repeat: no-repeat;
-    padding-left: 5em;
     background-origin: border-box;
     background-attachment: scroll;
-    background-position: -3px -10px;
+    background-position: 15px -25%;
     background-clip: padding-box;
-    padding-bottom: 47px;
-    max-height: 8em;
+    background-size: 75px;
+    overflow-y: hidden;
 }
-.fitimage ul p {
-    /*float: right;*/
-    color: #1B1B1B;
-    max-width: 11em;
-    margin-left: 3em;
+.fitimage ul li p {
+    text-transform: lowercase;
+    overflow: visible;
 }
-.fitimage ul i {
+/*.fitimage ul li small{
+    font-size: 1em;
+    text-transform: lowercase;
+    font-weight: normal;
+    padding-left: 2em;
+    float: none;
+    text-align: left;
+}*/
+.fitimage ul li i {
     border-right-color: #1B1B1B;
     border-width: thin;
     border-right-style: solid;
     color: #FFFFFF;
 }
 .fitimage ol li {
-    background-color: #FFFFFF;
-    border-left: 1em solid #00421C;
-    font-size: 1em;
-    width: 20em;
+    color: #7A7A7A;
     font-style: normal;
+    font-size: 0.65em;
+    width: 100%;
     text-transform: none;
     margin-top: 1em;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    list-style-type: none;
     margin-left: -2em;
+    padding: 0.5em;
+    list-style-type: none;
+    background-color: #FFFFFF;
+    border-left: 1em solid #00421C;
     box-shadow: 1px 1px 3px #C7C7C7;
     -webkit-box-shadow: 1px 1px 3px #C7C7C7;
 }
@@ -231,9 +240,45 @@ _______________________________________________________________*/
     display: inline-block;
     height: 1%;
 }
-
-.col-ncc-wp{
-background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.20) 0%,rgba(0,0,0,0.20) 100%), url(../images/about_nairobi/ncc07.jpg);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.20) 0%,rgba(0,0,0,0.20) 100%), url(../images/about_nairobi/ncc07.jpg);
+.col-ncc-wp {
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/about_nairobi/ncc07.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/about_nairobi/ncc07.jpg);
     background-size: cover;
+}
+.fitimage .row > div[class*=col] {
+    border-bottom: 1px solid #efefef;
+    padding: 2em 0;
+}
+.fitimage .row > div[class*=col]:first-child {
+    padding-top: 0;
+}
+.fitimage ul li a.education {
+    background-image: url(../images/icons/04.png);
+}
+.fitimage ul li a.health {
+    background-image: url(../images/icons/10.png);
+}
+.fitimage ul li a.public {
+    background-image: url(../images/icons/12.png);
+}
+.fitimage ul li a.lands {
+    background-image: url(../images/icons/09.png);
+}
+.fitimage ul li a.trade {
+    background-image: url(../images/icons/06.png);
+}
+.fitimage ul li a.water {
+    background-image: url(../images/icons/02.png);
+}
+.fitimage ul li a.finance {
+    background-image: url(../images/icons/11.png);
+}
+.fitimage ul li a.agriculture {
+    background-image: url(../images/icons/01.png);
+}
+.fitimage ul li a.county-secretary {
+    background-image: url(../images/icons/03.png);
+}
+.fitimage ul li a.assembly {
+    background-image: url(../images/icons/05.png);
 }

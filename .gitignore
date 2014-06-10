@@ -3,7 +3,7 @@ vendor/
 silverstripe-cache/
 bootstrap/
 blackcandy/
-assets/
+#assets/
 
 ### Node ###
 # Logs

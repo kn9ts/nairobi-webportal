@@ -8,7 +8,8 @@
     </div>
     <!-- Time and weather-->
     <div class="col-md-2 hidden-xs hidden-sm text-center yellow-bg">
-        <h2 class="moment-in-time grey">The time is?</h2>
+        <h2 class="moment-in-time grey no-padding">The time is?</h2>
+        <small class="grey">Local time, Nairobi.</small>
     </div>
     <!-- The navigation menu-->
     <div class="col-sm-6 col-md-5 hidden-xs">
@@ -50,11 +51,20 @@
             <div class="col-xs-6 col-sm-7 inherit height">
                 <div id="social-icons">
                     <div class="row text-center">
-                        <div class="col-xs-4"><i class="fa fa-facebook-square fa-2x"></i>
+                        <div class="col-xs-4">
+                            <a class="blue" target="_blank" href="https://www.facebook.com/pages/Nairobi-City-County-Official/569756036404745">
+                                <i class="fa fa-facebook-square fa-2x"></i>
+                            </a>
                         </div>
-                        <div class="col-xs-4"><i class="fa fa-twitter fa-2x"></i>
+                        <div class="col-xs-4">
+                            <a class="blue" target="_blank" href="https://twitter.com/county_nairobi">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a>
                         </div>
-                        <div class="col-xs-4"><i class="fa fa-google-plus-square fa-2x"></i>
+                        <div class="col-xs-4">
+                            <a class="blue" target="_blank" href="mailto:info@nairobi.go.ke">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

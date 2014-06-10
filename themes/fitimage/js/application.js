@@ -73,4 +73,5 @@ var app = {
         //if only one argument is given retrieve that data from localstorage
         return arguments.length == 1 ? JSON.parse(localStorage.getItem(key)) : false;
     }
+    
 };

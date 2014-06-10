@@ -28,7 +28,7 @@
                     <img src="{$ThemeDir}/images/ncclogo.png" alt="NCC logo" class="img-responsive white-bg">
                 </div>
 
-                <% if $ClassName = BlogEntry || $ClassName = SectionPage %>
+                <%-- <% if $ClassName = BlogEntry || $ClassName = SectionPage %>
                 <style type="text/css">
                     #page-header {
                     <% if $backgroundImage %>
@@ -53,7 +53,7 @@
                         <% end_if %>
                     </div>
                 </div>
-                <% else %>
+                <% else %> --%>
 
                 <!-- Others: NCC Abbr, Login and gallery links -->
                 <div class="header-menu col-xs-6 col-sm-8 col-md-8 col-lg-9 white-bg">
@@ -63,7 +63,7 @@
                             <h1 class="no-padding no-margin blue">
                                 NAIROBI CITY COUNTY
                             </h1>
-                            <small class="no-padding no-margin green lead">The green city under the sun.</small>
+                            <small class="no-padding no-margin green lead">$SiteConfig.Tagline</small>
                         </div>
                         <div class="col-xs-3 grey-bg hidden-xs">
                             <a href="{$BaseHref}/about-the-county/">
@@ -78,7 +78,7 @@
                         <%-- <div class="col-xs-1 invisible opacity"></div> --%>
                     </div>
                 </div>
-                <% end_if %>
+                <%-- <% end_if %> --%>
             </div>
         </div>
     </div>

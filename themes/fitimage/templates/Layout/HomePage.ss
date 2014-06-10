@@ -34,7 +34,7 @@
                 <div class="row main-menu">
                     <% if $Children %>
                         <% loop $Children %>
-                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder %>
+                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage.ss %>
                         <div class="col-xs-12 col-sm-6 col-md-6 {$ClassName}-menu">
                             <a href="$Link">
                                 <div class="panel panel-default">
@@ -94,7 +94,7 @@
         <div id="mini-menu" class="row mini-menu $ClassName">
             <% if $Children %>
                 <% loop $Children %>
-                <% if $ClassName = MiniSection %>
+                <% if $ClassName = MiniSection || $ClassName = MapsPage %>
                 <a href="$Link">
                     <div class="col-xs-6 col-sm-3 col-md-3 panel-{$bgColor}-bg">
                         <div class="panel panel-default">

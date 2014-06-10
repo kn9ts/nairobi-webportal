@@ -19,4 +19,3 @@ SSviewer::set_theme('fitimage');
 FulltextSearchable::enable();
 // GoogleSitemap::enable_google_notification();
 Requirements::set_combined_files_enabled(false);
-

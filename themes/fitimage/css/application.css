@@ -784,6 +784,7 @@ border-radius: 50%;*/
 .category-item .category-thumb IMG {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    max-height: 220px;
 }
 .category-item:hover .category-thumb IMG {
     transform: scale(1.1);
@@ -1156,4 +1157,9 @@ eg. ----------- Title ------------*/
     -moz-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;*/
+}
+
+h2.moment-in-time {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }

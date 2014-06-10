@@ -1,10 +1,10 @@
 <!--
 /**
- * Developed by Eugene Mutai & Team
+ * Developed by Emomentum -- Eugene Mutai & Team
  * Email: eugenemutai@gmail.com
  * Site: http://www.knightslab.com
- * Date: 06/04/14 (Updated on 07/04/14)
- * Time: 12:19 PM
+ * Date: 06/04/14 (Updated on 06/05/14)
+ * Time: 9:00 AM
  * Description: Nairobi County Website and portal.
  *
  * User Experience(UX) and "how beautiful the site looks!" done by:
@@ -14,7 +14,7 @@
  *  88""   88   88   88 88YbdP88  dP__Yb  Yb  "88 88""       o.`Y8b   88   Y8   8P 8I  dY  88 Yb   dP o.`Y8b 
  *  88     88   88   88 88 YY 88 dP""""Yb  YboodP 888888     8bodP'   88   `YbodP' 8888Y"  88  YbodP  8bodP' 
  *
- * http://www.fitiimagestudios.com
+ * http://www.fitimagestudios.com
  *
 -->
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
     <meta name="keywords" content="">
     <meta http-equiv="cleartype" content="on">
 
-    <link rel="shortcut icon" href="{$ThemeDir}/images/html5logos/original.png" />
+    <link rel="shortcut icon" href="{$ThemeDir}/images/ncclogo.png" />
 
     <% require themedCSS('bootstrap') %>
     <%-- <link rel="stylesheet" href="frameworks/bootstrap/dist/css/bootstrap.css"> --%>
@@ -50,7 +50,6 @@
     <!-- Your stylesheets -->
     <% require themedCSS('application') %>
     <%-- <link rel="stylesheet" href="app/css/application.css"> --%>
-
     <%-- <% require themedCSS('mods') %> --%>
 
     <% if $ClassName != GalleryPage || $ClassName != SectionHolder %>
@@ -67,12 +66,12 @@
 
     <!-- Breadcrumbs/Helper navigation bar-->
     <% if $ClassName != BlogEntry || $ClassName != SectionPage %>
-        <% include BreadcrumbsNavbar %>
+    <% include BreadcrumbsNavbar %>
     <% end_if %>
 
     <!--Site page header, only available on the homepage-->
     <% if $ClassName = HomePage %>
-        <% include PageHeader %>
+    <% include PageHeader %>
     <% end_if %>
 
     <!-- Content of the site goes in here-->
@@ -94,7 +93,7 @@
     <% include FooterFixedNavbar %>
     <% end_if %>
 
-    <!-- App's dependencies(libraries) and business logics-->
+    <!-- App's dependencies(libraries) and business logics -->
     <application-engine description="All the application's JS files fall here">
         <!-- jQuery library-->
         <script type="text/javascript" src="{$ThemeDir}/js/jquery.min.js"></script>

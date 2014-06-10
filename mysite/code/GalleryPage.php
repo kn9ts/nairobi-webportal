@@ -45,8 +45,8 @@ class GalleryPage extends Page {
 	function getFitimagePhotos() { 
 		$folder = GalleryPage::get()->first(); // Get the folder selected by the user in CMS
 		$galleryImages = DataObject::get("Image")->filter(array("ParentID" => "{$folder->FolderID}")); //->limit(20); //729
-        Debug::show($folder); 
-        // return $galleryImages;
+        // Debug::show($folder);
+        return $galleryImages;
 	}
 
 }
