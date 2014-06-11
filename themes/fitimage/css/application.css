@@ -190,6 +190,9 @@ h1 blockquote {
 .padding-sm {
     padding: 0.45em;
 }
+.padding-md {
+    padding: 0.6em;
+}
 .padding {
     padding: 0.8em;
 }
@@ -297,13 +300,13 @@ h1 blockquote {
  .top {
     top: 0;
 }
-.breadcrumbs-navbar small.bread ol{
+.breadcrumbs-navbar small.bread ol {
     background: none;
     width: 80%;
     padding: 0;
     margin: 0
 }
-.breadcrumbs-navbar small.bread ol li.active{
+.breadcrumbs-navbar small.bread ol li.active {
     /*color: #FFDE00;*/
 }
 /**** THE NAV MENU *****/
@@ -369,9 +372,8 @@ P.arrow.grey-arrow I:hover {
 #social-icons DIV.col-xs-4:last-child {
     border: none;
 }
-
-#social-icons a{
-    color: #FFDE00;
+#social-icons a {
+    color: white;
 }
 /*The emergency services bar at the corner*/
  .emergency-services-bar {
@@ -512,21 +514,22 @@ P.arrow.grey-arrow I:hover {
     height: 200px;
     min-height: 200px;
     background: transparent;
-}
-.header-menu .row {
-    background: none;
-}
-.header-menu .row > div:first-child {
-    background: #fefefe
+    margin: 2.5em 0;
+    /*background: #FEFEFE;*/
+    border-radius: 3px;
 }
 .header-menu div {
     height: 200px;
     min-height: 200px;
 }
-.header-menu {
-    margin: 2.5em 0;
-    /*background: #FEFEFE;*/
-    border-radius: 3px;
+.header-menu .row {
+    background: none;
+}
+.header-menu DIV[class*="col"] {
+    height: 100px;
+}
+.header-menu .row > div:first-child {
+    background: #fefefe
 }
 .header-menu I {
     vertical-align: middle;
@@ -535,6 +538,21 @@ P.arrow.grey-arrow I:hover {
 .header-menu H3 {
     font-size: 1.8em;
     line-height: 25px;
+}
+.header-menu .row > a:hover div.about{
+    background: green;
+}
+.header-menu .row > a:hover div.about i{
+    color: green;
+}
+.header-menu .row > a:hover div.about h3{
+    color: #004119
+}
+.header-menu .row > a:hover div.see{
+    background: #232323;
+}
+.header-menu .row > a:hover div.see h3{
+    color: #CCB312;
 }
 @media (max-width: 768px) and (max-width: 992px) {
     .header-menu h3 {
@@ -551,9 +569,6 @@ P.arrow.grey-arrow I:hover {
     border-radius: 2px;
     background: #CCB312;
     color: #000;
-}
-.header-menu DIV[class*="col"] {
-    height: 100px;
 }
 .header-menu:before {
     position: absolute;
@@ -1071,7 +1086,7 @@ border-radius: 50%;*/
     border-radius: 3px;
     /*margin: 1em 0;*/
     padding: 2em;
-    font-family: QuattrocentoSans_Bold, sans-serif;
+    font-family: QuattrocentoSans, sans-serif;
     font-size: 1.5em;
     font-weight: 300;
     color: #444;

@@ -1,8 +1,8 @@
 <div class="row pale-grey-bg">
-    <div class="col-xs-12">
+    <%-- <div class="col-xs-12">
         <h3 class="no-padding">$Breadcrumbs</h3>
-    </div>
-    <div class="col-xs-12">
+    </div> --%>
+    <div class="col-xs-12 space">
         <!--The sections/categories-->
         <div class="row">
             <% if $Children %>

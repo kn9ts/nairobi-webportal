@@ -31,24 +31,26 @@
 
                 <!-- Others: NCC Abbr, Login and gallery links -->
                 <div class="header-menu col-xs-6 col-sm-8 col-md-8 col-lg-9 white-bg">
-                    <div class="row text-align-center">
+                    <div class="row text-center">
                         
                         <div class="col-xs-12 col-sm-5 white-bg">
                             <h1 class="no-padding no-margin blue">
                                 NAIROBI CITY COUNTY
                             </h1>
-                            <small class="no-padding no-margin green lead">$SiteConfig.Tagline</small>
+                            <small class="no-padding no-margin green lead text-left">$SiteConfig.Tagline</small>
                         </div>
-                        <div class="col-xs-3 grey-bg hidden-xs">
-                            <a href="{$BaseHref}/about-the-county/">
-                                <h3 class="icon-login">About NCC &nbsp;<i class="fa fa-arrow-right fa-1x"></i></h3>
-                            </a>
-                        </div>
-                        <div class="col-xs-3 yellow-bg hidden-xs">
-                            <a href="{$BaseHref}see-nairobi">
-                                <h3 class="icon-gallery">See Nairobi &nbsp;<i class="fa fa-th fa-1x"></i></h3>
-                            </a>
-                        </div>
+
+                        <a href="{$BaseHref}about-the-county/">
+                            <div class="col-xs-3 grey-bg hidden-xs about">
+                                <h3 class="icon-login white padding-top">About NCC &nbsp;<i class="fa fa-info-circle fa-1x"></i></h3>
+                            </div>
+                        </a>
+                        
+                        <a href="{$BaseHref}see-nairobi">
+                            <div class="col-xs-3 yellow-bg hidden-xs see">
+                                <h3 class="icon-gallery grey padding-top">See Nairobi &nbsp;<i class="fa fa-th fa-1x"></i></h3>
+                            </div>
+                         </a>
                         <%-- <div class="col-xs-1 invisible opacity"></div> --%>
                     </div>
                 </div>

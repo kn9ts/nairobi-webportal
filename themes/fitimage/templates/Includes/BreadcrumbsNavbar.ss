@@ -1,7 +1,7 @@
 <div data-part="breadcrumbs-navbar" id="helper-navbar" class="row fixed-nav-bar top breadcrumbs-navbar">
     <div class="col-xs-12 welcome-nav">
         <div class="row">
-            <div class="col-xs-offset-1 col-sm-5 col-md-6 hidden-xs">
+            <div class="col-xs-offset-1 col-xs-12 col-md-6 col-lg-6">
                 <div class="container">
                     <% if $ClassName = GalleryPage %>
                     <a href="$BaseHref">
@@ -19,7 +19,7 @@
                     <%-- <% end_if %> --%>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-5">
+            <div class="hidden-xs hidden-sm col-md-5">
                 <h5 class="white text-center">&nbsp;</h5>
             </div>
         </div>
