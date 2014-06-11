@@ -6,7 +6,8 @@
 		<hr>
 		<h4> $Title </h4>
 		<div class = "content">
-			$Photo.setWidth(200) $Content
+			$Photo.setWidth(200)
+			$Content
 		</div>
 	</event>
 </div>

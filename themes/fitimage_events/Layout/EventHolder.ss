@@ -13,9 +13,9 @@
             <div class="panel">
                 <div class="panel-body">
                     <h3> <a href="$Link">$Title</a> <small class="yellow">$Date.Long</small></h3>
-                    <small>Start Date: $StartTime.Nice</small>
+                    <small>Start Time: $StartTime.Nice</small>
                     <br />
-                    <small>End Date: $EndTime.Nice</small>
+                    <small>End Time: $EndTime.Nice</small>
                     <% if $Content %>
                     <p class="text-muted">$Content.LimitWordCountXML</p>
                     <% end_if %>

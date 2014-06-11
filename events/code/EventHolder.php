@@ -59,7 +59,7 @@ class EventHolder_Controller extends Page_Controller {
 
 	public function getEvents($num=5) {
 		$holder = EventHolder::get()->First();
-		return ($holder) ? EventPage::get()->filter('ParentID', $holder->ID)->sort('Date DESC')->limit($num) : false; //Filter by ID of every event and ID of it's parent
+		return ($holder) ? EventPage::get()->sort('Date DESC')->limit($num) : false; //Filter by ID of every event and ID of it's parent
 	}
 
 	/*
@@ -74,8 +74,8 @@ class EventHolder_Controller extends Page_Controller {
 	*/
 
 	public function getAllEvents(){
-		$holder = EventHolder::get()->First();
-		return ($holder)? EventPage::get()->filter('ParentID', $holder->ID)->sort('Date DESC') : false;
+		$holder = EventHolder::get()->First(); //To verify if there is any events
+		return ($holder)? EventPage::get()->sort('Date DESC') : false;
 	}
 
 	// public function init(){
@@ -113,7 +113,7 @@ class EventHolder_Controller extends Page_Controller {
 
 	public function LatestUpdates($num = 2) {
     	$holder = BlogHolder::get()->First();
-    	return ($holder) ? BlogEntry::get()->filter('ParentID', $holder->ID)->sort('Date DESC')->limit($num) : false;	
+    	return ($holder) ? BlogEntry::get()->sort('Date DESC')->limit($num) : false;	
 	}
 
 }

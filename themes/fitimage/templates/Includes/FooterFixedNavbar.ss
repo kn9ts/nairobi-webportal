@@ -47,7 +47,7 @@
     </div>
     <!-- Emergency Services and social-icons-->
     <div class="col-sm-6 col-md-4">
-        <div class="row inherit-height">
+        <div class="row inherit height">
             <div class="col-xs-6 col-sm-7 inherit height">
                 <div id="social-icons">
                     <div class="row text-center">

@@ -357,6 +357,7 @@ P.arrow.grey-arrow I:hover {
 /*The emergnecy section at the bottom corner of the screen*/
  #social-icons .row {
     padding: 8% 0;
+    /*padding: 1% 0*/
 }
 #social-icons I {
     /*margin-top: 25%;*/
@@ -374,6 +375,19 @@ P.arrow.grey-arrow I:hover {
 }
 #social-icons a {
     color: white;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+#social-icons a:hover {
+    color: #FFDE00;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
 }
 /*The emergency services bar at the corner*/
  .emergency-services-bar {
@@ -521,6 +535,11 @@ P.arrow.grey-arrow I:hover {
 .header-menu div {
     height: 200px;
     min-height: 200px;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .header-menu .row {
     background: none;
@@ -539,19 +558,19 @@ P.arrow.grey-arrow I:hover {
     font-size: 1.8em;
     line-height: 25px;
 }
-.header-menu .row > a:hover div.about{
+.header-menu .row > a:hover div.about {
     background: green;
 }
-.header-menu .row > a:hover div.about i{
+.header-menu .row > a:hover div.about i {
     color: green;
 }
-.header-menu .row > a:hover div.about h3{
+.header-menu .row > a:hover div.about h3 {
     color: #004119
 }
-.header-menu .row > a:hover div.see{
+.header-menu .row > a:hover div.see {
     background: #232323;
 }
-.header-menu .row > a:hover div.see h3{
+.header-menu .row > a:hover div.see h3 {
     color: #CCB312;
 }
 @media (max-width: 768px) and (max-width: 992px) {
@@ -613,6 +632,7 @@ P.arrow.grey-arrow I:hover {
  .welcome-nav {
     background-color: #232323;
     padding: 1em;
+    /*padding: .5em; When social icons are added to the top*/
 }
 .welcome-nav H5 {
     margin: 0;

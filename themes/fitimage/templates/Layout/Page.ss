@@ -4,7 +4,7 @@
     </div>
     <div class="col-xs-12">
         <div class="container">
-            <div class="blog-container <% if $Form %>hidden<% end_if %>">
+            <div class="blog-container white-bg <% if $Form %>hidden<% end_if %>">
                 $Content
             </div>
             <% if $Form %>
