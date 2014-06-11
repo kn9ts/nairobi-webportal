@@ -46,37 +46,18 @@
 	<%-- $PageComments --%>
 </div>
 <div class="space-lg"></div>
-<div class="col-xs-12">
-    	<div class="row container">
-    		<div class="col-xs-12">
-    			<div class="blog-container">
-    				$Content
-    			</div>
-    			<div class="blog-tag-container text-center">
-    				<% if TagsCollection %>
-					<div class="tags">
-						 <% _t('BlogEntry_ss.TAGS', 'Tags:') %> 
-						<% loop TagsCollection %>
-							<a class="label label-success label-lg" href="$Link" title="<% _t('BlogEntry_ss.VIEWALLPOSTTAGGED', 'View all posts tagged') %> '$Tag'" rel="tag">$Tag</a>
-							<% if not Last %>,<% end_if %>
-						<% end_loop %>
-					</div>
-					<% end_if %>
 
-					<% if IsOwner %>
-					<p class="edit-post">
-						<a class="btn btn-sm btn-default" href="$EditURL" id="editpost" title="<% _t('BlogEntry_ss.EDITTHIS', 'Edit this post') %>">
-							<% _t('BlogEntry_ss.EDITTHIS', 'Edit this post') %>
-						</a>
-						 or  
-						<a class="btn btn-sm btn-danger" href="$Link(unpublishPost)" id="unpublishpost">
-						<% _t('BlogEntry_ss.UNPUBLISHTHIS', 'Unpublish this post') %>
-						</a>
-					</p>
-					<% end_if %>
-    			</div>
-    		</div>
-    	</div>
-    <div>
-	<%-- $PageComments --%>
-</div>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nccnew'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
