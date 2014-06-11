@@ -297,6 +297,15 @@ h1 blockquote {
  .top {
     top: 0;
 }
+.breadcrumbs-navbar small.bread ol{
+    background: none;
+    width: 80%;
+    padding: 0;
+    margin: 0
+}
+.breadcrumbs-navbar small.bread ol li.active{
+    /*color: #FFDE00;*/
+}
 /**** THE NAV MENU *****/
  .bottom {
     bottom: 0;
@@ -359,6 +368,10 @@ P.arrow.grey-arrow I:hover {
 }
 #social-icons DIV.col-xs-4:last-child {
     border: none;
+}
+
+#social-icons a{
+    color: #FFDE00;
 }
 /*The emergency services bar at the corner*/
  .emergency-services-bar {
@@ -1158,8 +1171,8 @@ eg. ----------- Title ------------*/
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;*/
 }
-
-h2.moment-in-time {
+/*local time defination*/
+ h2.moment-in-time {
     padding-bottom: 0;
     margin-bottom: 0;
 }

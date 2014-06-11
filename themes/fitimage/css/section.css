@@ -1,0 +1,45 @@
+.section-header {
+    width: 100%;
+    /*background: none;*/
+    background-image: url("../images/Nairobi County-59.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    height: 400px;
+    /*background-attachment: fixed;*/
+    z-index: 9090;
+}
+.section-header .header-row {
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+.section-header .header-row h5 {
+    color: #1B1B1B;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px white;
+}
+.section-header h3 {
+    color: white;
+    /*color: #1B1B1B;*/
+    font-size: 4em;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 0.73em;
+    letter-spacing: -0.1em;
+    text-shadow: 1px 1px 1px #1d1d1d;
+    /*text-align: left;*/
+    /*max-width: 90%;*/
+    font-family: QuattrocentoSans_Bold;
+}
+.section-header h3, .section-header h5, .section-header small {
+    /*background: #1B1B1B;*/
+    padding: 0.2em;
+    width: auto;
+    /*color: white !important;*/
+}
+@media (max-width: 768px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}

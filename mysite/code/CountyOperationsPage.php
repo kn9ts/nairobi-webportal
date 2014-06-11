@@ -1,6 +1,6 @@
 <?php
 
-class CountyOperationsPage extends Page {
+class CountyOperationsPage extends SectionPage {
     // Some defaults
     // private static $icon = "themes/fitiimage/images/icons/games.png";
     private static $description = "Will hold informational pages";

@@ -1,4 +1,4 @@
-<div data-part="breadcrumbs-navbar" id="helper-navbar" class="row fixed-nav-bar top">
+<div data-part="breadcrumbs-navbar" id="helper-navbar" class="row fixed-nav-bar top breadcrumbs-navbar">
     <div class="col-xs-12 welcome-nav">
         <div class="row">
             <div class="col-xs-offset-1 col-sm-5 col-md-6 hidden-xs">
@@ -14,6 +14,9 @@
                     <%-- <h5 class="yellow">
                         <i class="fa fa-arrow-down fa-2x">&nbsp;</i>Hide menu &amp; see Nairobi.
                     </h5> --%>
+                    <%-- <% if $ClassName = BlogEntry || $ClassName = SectionPage %> --%>
+                    <small class="no-padding no-margin bread">$Breadcrumbs</small>
+                    <%-- <% end_if %> --%>
                 </div>
             </div>
             <div class="col-sm-5 col-md-5">

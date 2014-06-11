@@ -7,7 +7,7 @@ class HomePage extends Page {
 
 class HomePage_Controller extends Page_Controller {
 	public function LatestUpdates($num = 2) {
-    	$holder = BlogHolder::get()->First();
-    	return ($holder) ? BlogEntry::get()->filter('ParentID', $holder->ID)->sort('Date DESC')->limit($num) : false;	
+    	// $holder = BlogHolder::get()->First();
+    	return BlogEntry::get()->sort('Date DESC')->limit($num);	
 	}
 }

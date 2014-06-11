@@ -1,6 +1,6 @@
 <div class="row pale-grey-bg">
     <div class="col-xs-12">
-        <h3 class="no-padding">$Breadcrumbs</h3>
+        <%-- <h3 class="no-padding">$Breadcrumbs</h3> --%>
         <h3>
     	<% if SelectedTag %>
 		<% _t('BlogHolder_ss.VIEWINGTAGGED', 'Viewing entries tagged with') %> 

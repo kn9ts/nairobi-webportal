@@ -49,6 +49,7 @@
     -->
     <!-- Your stylesheets -->
     <% require themedCSS('application') %>
+    <% require themedCSS('section') %>
     <%-- <link rel="stylesheet" href="app/css/application.css"> --%>
     <%-- <% require themedCSS('mods') %> --%>
 
@@ -64,10 +65,14 @@
     <%-- <% if $ClassName != HomePage %>require-margin<% end_if %> --%>
     <%-- <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %> --%>
 
-    <!-- Breadcrumbs/Helper navigation bar-->
-    <% if $ClassName != BlogEntry || $ClassName != SectionPage %>
-    <% include BreadcrumbsNavbar %>
+    <% if $ClassName = BlogEntry %><%-- || $ClassName != SectionPage --%>
+    <% include AlternateHeader %>
     <% end_if %>
+
+    <!-- Breadcrumbs/Helper navigation bar-->
+    <%-- <% if $ClassName != BlogEntry || $ClassName != SectionPage %> --%>
+    <% include BreadcrumbsNavbar %>
+    <%-- <% end_if %> --%>
 
     <!--Site page header, only available on the homepage-->
     <% if $ClassName = HomePage %>
@@ -89,7 +94,11 @@
     </div>
     <% end_if %>
 
-    <% if $ClassName != GalleryPage %>
+    </div>
+    </div>
+    <%-- </div> --%>
+    <%-- </div> --%>
+    <% if $ClassName != GalleryPage || $ClassName != BlogEntry %>
     <% include FooterFixedNavbar %>
     <% end_if %>
 
