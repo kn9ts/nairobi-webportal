@@ -202,9 +202,8 @@ _________________________________________________*/
     opacity: 0.85;
     color: white;
 }
-/* ----- Kelvin's Services page edit --- 17|05|14 ----- */
- .fitimage .serv {
-    margin-top: 1em;
+.fitimage .serv {
+    margin-top: 3em;
     padding-top: 2em;
     padding-right: 2em;
     padding-bottom: 2em;

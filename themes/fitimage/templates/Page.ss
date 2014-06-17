@@ -98,7 +98,7 @@
     </div>
     <%-- </div> --%>
     <%-- </div> --%>
-    <% if $ClassName != GalleryPage || $ClassName != BlogEntry %>
+    <% if $ClassName != GalleryPage %>
     <% include FooterFixedNavbar %>
     <% end_if %>
 

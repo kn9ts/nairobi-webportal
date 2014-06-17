@@ -4,7 +4,7 @@
         <div class="blog-description">
             <div class="row">
                 <div class="col-xs-12 blog-pn blog-pn-header">
-                    <h4><a href="$Link">$MenuTitle.LimitWordCount(6)</a></h4>
+                    <h4><a href="$Link">$MenuTitle.LimitCharacters(25)</a></h4>
                 </div>
                 <div class="col-xs-12 blog-pn blog-pn-author">
                     <small class="author additional text-muted clearfix">

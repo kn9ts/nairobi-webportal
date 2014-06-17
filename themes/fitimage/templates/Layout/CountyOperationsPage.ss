@@ -297,8 +297,8 @@
                         <li>Plant and animal disease control and fisheries</li>
                         <li>Animal control and welfare including licenses of dogs and facilities for the accommodation, care and burial of animals</li>
                         <li>Veterinary services (excluding regulation of profession)</li>
-                        <p>The Nairobi City County, as can be seen from the foregoing, is a service provision outfit larger in structure than the defunct City Council of Nairobi. The former bears more functions and responsibilities than the latter some inherited from the Council and others transferred from the national government.</p>
                     </ol>
+                    <p>The Nairobi City County, as can be seen from the foregoing, is a service provision outfit larger in structure than the defunct City Council of Nairobi. The former bears more functions and responsibilities than the latter some inherited from the Council and others transferred from the national government.</p>
                 </div>
             </div>
 

@@ -66,21 +66,37 @@
                 </div>
             </div>
             <!-- Blog posts -->
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blog-section">
-                <h3 class="no-padding no-margin">News, Events and Updates
-                    <br/>
-                    <small class="muted">The little things that matter.</small>
-                </h3>
-                <hr class="margin">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blog-section no-padding">
+                <div class="blog-tab">
+                    <h3 class="no-padding no-margin">News, Events and Updates
+                        <br/>
+                        <small class="muted">The little things that matter.</small>
+                    </h3>
+                    <hr class="margin">
+                    <% if LatestUpdates %>
+                    <div class="row blog-row">
+                        <% loop $LatestUpdates %>
+                            <% include BlogPreviewSection %>
+                        <% end_loop %>
+                    </div>    
+                    <% else %>
+                    <div class="jumbotron">
+                        <p class="muted"> Nothing <span class="label label-success label-sm">interesting</span> to make you happy. But we are cooking up something for you.</p>
+                    </div>
+                    <% end_if %>
+                </div>
                 <% if LatestUpdates %>
-                <div class="row blog-row">
-                    <% loop $LatestUpdates %>
-                        <% include BlogPreviewSection %>
-                    <% end_loop %>
-                </div>    
-                <% else %>
-                <div class="jumbotron">
-                    <p class="muted"> Nothing <span class="label label-success label-sm">interesting</span> to make you happy. But we are cooking up something for you.</p>
+                <div class="col-xs-12 col-sm-6 col-md-12 padding text-center grey-bg yellow open-reader-link">
+                    <div class="col-xs-3">
+                        <h3 class="fa fa-microphone yellow">&nbsp;</h3>
+                    </div>
+                    <a href="{$BaseHref}home/news-and-updates/">
+                        <div class="col-xs-9">
+                            <h3 class="yellow">
+                                <span>Open News Reader</span>
+                            </h3>
+                        </div>
+                    </a>
                 </div>
                 <% end_if %>
             </div>

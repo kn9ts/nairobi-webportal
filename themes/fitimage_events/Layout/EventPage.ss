@@ -3,7 +3,7 @@
         <h3>$Breadcrumbs</h3>
     </div>
 </div> --%>
-<div class="row space">
+<div class="row space-lg">
     <div class="col-xs-12 col-md-3">
         <div class="panel panel-success">
             <!-- Default panel contents -->

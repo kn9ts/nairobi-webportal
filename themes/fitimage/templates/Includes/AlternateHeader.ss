@@ -18,7 +18,7 @@
         <h5 class="no-padding no-margin green">
             <% _t('BlogEntry_ss.POSTEDBY', 'Posted by') %> $Author.XML
         </h5>
-        <small><% _t('BlogEntry_ss.POSTEDON', 'on') %> $Date.Long</small>
+        <small class="green"><% _t('BlogEntry_ss.POSTEDON', 'on') %> $Date.Long</small>
         <% else_if $ClassName = SectionPage %>
         <h3 class="green">{$Description}</h3>
         <% end_if %>
