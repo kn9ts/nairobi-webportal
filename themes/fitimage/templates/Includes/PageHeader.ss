@@ -10,14 +10,14 @@
         <%-- <h4 class="white text-center pull-left">Welcome to Nairobi City County. How can we help you?</h4> --%>
     </div>
     <div class="col-sm-5 col-md-5">
-        <h4 class="white text-center">Welcome to Nairobi City County. How can we help you?</h4>
+        <h4 class="text-center grey-bg padding-xs white">Welcome to Nairobi City County Web Portal.</h4>
     </div>
 </div>
 
 <!-- Homepage main navbar -->
 <div role="header" data-part="site-header" id="page-header" class="row page-header-bar">
     <!-- THE LOGO HEADER STARTS HERE -->
-    <div class="col-xs-12 page-header">
+    <div class="col-xs-12 page-header" id="ncc-page-bar">
         <div class="container">
             <!-- ncc logo header -->
             <div class="row space header-bg">
@@ -46,9 +46,9 @@
                             </div>
                         </a>
                         
-                        <a href="{$BaseHref}see-nairobi">
+                        <a href="{$BaseHref}home/explore-nairobi">
                             <div class="col-xs-3 yellow-bg hidden-xs see">
-                                <h3 class="icon-gallery grey padding-top">See Nairobi &nbsp;<i class="fa fa-th fa-1x"></i></h3>
+                                <h3 class="icon-gallery grey padding-top">Explore City&nbsp;<i class="fa fa-th fa-1x"></i></h3>
                             </div>
                          </a>
                         <%-- <div class="col-xs-1 invisible opacity"></div> --%>

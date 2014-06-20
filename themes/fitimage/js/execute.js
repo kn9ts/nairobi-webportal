@@ -4,12 +4,28 @@ $(function() {
     $(window).on("load", app.initialize);
 
     $('.page-content').css('height', function() {
-        var h = $(this).height()
-        if (h < window.innerHeight) {
-            h = window.innerHeight
-        }
+        var h = $(this).height();
+        if (h < window.innerHeight) h = window.innerHeight;
         return h;
-    })
+    });
+
+    var hidePageMenus = function(bool) {
+        var density = bool == undefined ? 0.2 : 1;
+        $('#ncc-page-bar').animate({opacity: density}, 100, 'linear', function() {
+            $(this).mouseenter(function() {
+                $(this).animate({opacity: 1}, 100, 'linear');
+            }).mouseleave(function() {
+                $(this).animate({opacity: density}, 100, 'linear');
+            })
+        });
+        // $('#navigation-bar').slideToggle();
+    }
+
+    $(window).on("load", function() {
+        if ($('body').hasClass('HomePage')) {
+            setTimeout(hidePageMenus, 1000)
+        };
+    });
 
     //Resize the background image to the size of the body
     if ($('body').hasClass('HomePage') && window.innerWidth >= 768) {

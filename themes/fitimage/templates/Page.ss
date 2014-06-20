@@ -88,7 +88,7 @@
     </div>
     <% else %>
     <div data-part="other pages content" class="page-content pale-grey-bg">
-        <div id="page-content" class="container-fluid content">
+        <div id="page-content" class="container-fluid <% if $ClassName != EmergencyServicesPage %>content<% end_if %>">
             $Layout
         </div>
     </div>

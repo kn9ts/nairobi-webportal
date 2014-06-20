@@ -114,7 +114,7 @@ h1 blockquote {
 }
 .grey-bg {
     background: #232323;
-    color: #999;
+    /*color: #999;*/
 }
 .pale-grey-bg {
     background: #EDEDED;
@@ -390,9 +390,12 @@ P.arrow.grey-arrow I:hover {
     transform: scale(1.5);
 }
 /*The emergency services bar at the corner*/
- .emergency-services-bar {
+ .emergency-services-bar, .emergency-services-bar a {
     background: #D82E2F;
     color: white;
+}
+.emergency-services-bar a:hover {
+    color: #FFDE00;
 }
 .emergency-services-bar .row {
     padding: 8%;
@@ -468,6 +471,7 @@ P.arrow.grey-arrow I:hover {
     padding-left: 12%;
     padding-top: 8%;
     font-family: QuattrocentoSans_Bold;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -631,8 +635,18 @@ P.arrow.grey-arrow I:hover {
 /*The black slim nav bar after NCC header intro*/
  .welcome-nav {
     background-color: #232323;
-    padding: 1em;
+    /*padding: 1em;*/
     /*padding: .5em; When social icons are added to the top*/
+}
+ .welcome-nav .row div[class*=col]{
+    padding: 1em ;
+ }
+.welcome-nav div[class*=col].gallery-link{
+    padding: 0;
+    margin: 0
+}
+.welcome-nav div[class*=col].gallery-link .row > div{
+    padding: .5em
 }
 .welcome-nav H5 {
     margin: 0;
@@ -1139,6 +1153,143 @@ border-radius: 50%;*/
 .blog-tag-container a:not(.btn) {
     color: white;
 }
+/*-------- EMERGENCY TAB STYLING -----------------*/
+ .EmergencyServicesPage .content-fluid, .EmergencyServicesPage #page-content {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2em;
+    background: #232323;
+}
+.emergency-tab {
+    margin: 0;
+}
+.emergency-tab h1 small {
+    color: white
+}
+.emergency-tab div[class*=col] {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.emergency-tab .jumbotron {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+    max-height: inherit;
+    overflow: hidden;
+}
+.emergency-tab .red-bg .jumbotron {
+    background: #D82E2F;
+    color: white
+}
+.emergency-tab .em-page-header {
+    border-bottom: 12px solid #232323;
+}
+.emergency-tab .jumbotron.em-page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.emergency-tab .jumbotron.em-page-header span {
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    background: white;
+    padding: 1px 5px;
+    margin: 0;
+    font-size: 1.5em;
+}
+.emergency-tab .jumbotron.em-page-header h1 {
+    color: #D82E2F;
+    font-size: 7em;
+    letter-spacing: -0.05em;
+    padding-top: 10px;
+}
+.emergency-tab .main-hotline .em-info{
+    width: 100%;
+    margin: 0 auto;
+}
+.emergency-tab .main-hotline i {
+    font-size: 4.8em;
+    margin-top: 0;
+}
+.emergency-tab .hotline-links {
+    text-transform: uppercase;
+}
+.emergency-tab .hotline-links div[class*=col]:first-child {
+    padding-left: 15px;
+}
+.emergency-tab .hotline-links .jumbotron {
+    background: #D82E2F;
+    color: white;
+    border-top: 2px solid #232323;
+    border-right: 2px solid #232323;
+    border-bottom: 2px solid #232323;
+    min-height: 250px
+}
+.emergency-tab .hotline-links .jumbotron a {
+    color: white;
+}
+.emergency-tab .hotline-links img {
+    width: 35%;
+    height: 35%
+}
+.incase-of-fire .row > div {
+    border-left: 4px solid #232323;
+}
+.incase-of-fire .steps {
+    background: #FFDE00;
+}
+.incase-of-fire .jumbotron {
+    padding-top: 0;
+    padding-bottom: .8em;
+}
+.incase-of-fire .row > div:first-child {
+    border-bottom: 2px solid #232323
+}
+.incase-of-fire .jumbotron p {
+    font-size: .8em;
+    font-weight: lighter;
+    padding: 0;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.others, .others div {
+    min-height: 250px
+}
+dl {
+    font-size: 1.3em;
+    background: white;
+}
+.dl-horizontal dt {
+    width: 80%;
+    padding-right: 1em
+}
+dl p {
+    padding: 1em
+}
+dl dd {
+    margin-bottom: .5em;
+    vertical-align: middle;
+}
+dl dd span.fa-stack i:nth-child(2):before {
+    padding: 5px
+}
+dl i {
+    font-size: 1.2em;
+    color: #D82E2F;
+}
+dl i:before {
+    content:" ";
+}
+@media (max-width: 768px) {
+    .emergency-tab .jumbotron.em-page-header h1 {
+        font-size: 4em;
+    }
+    .others, .others div {
+        min-height: 150px
+    }
+}
 /*Action Box
 * --------------------------*/
  .action-box {
@@ -1225,6 +1376,8 @@ eg. ----------- Title ------------*/
 }
 /*local time defination*/
  h2.moment-in-time {
+    font-size: 2.5em;
     padding-bottom: 0;
     margin-bottom: 0;
+    opacity: .5
 }

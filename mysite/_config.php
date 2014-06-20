@@ -13,6 +13,15 @@ $databaseConfig = array(
 	"path" => '',
 );
 
+// $databaseConfig = array(
+// 	"type" => 'MySQLDatabase',
+// 	"server" => 'localhost',
+// 	"username" => 'prittyno_jhene',
+// 	"password" => 'wild1s75',
+// 	"database" => 'prittyno_silverstripe_ncc',
+// 	"path" => '',
+// );
+
 // Set the site locale
 i18n::set_locale('en_US');
 SSviewer::set_theme('fitimage');

@@ -1,7 +1,7 @@
-<div class="row">
-    <div class="col-xs-12 text-center">
+<div class="row space">
+    <%-- <div class="col-xs-12 text-center">
     	<h3>$Breadcrumbs</h3>
-    </div>
+    </div> --%>
     <div class="col-xs-12">
         <div class="container">
             <div class="blog-container white-bg <% if $Form %>hidden<% end_if %>">

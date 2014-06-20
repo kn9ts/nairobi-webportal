@@ -2,14 +2,14 @@
     <!--The menu icon-->
     <div class="col-xs-1 hidden-xs hidden-sm text-align-center">
         <a href="$BaseHref" class="yellow">
-            <i class="fa fa-home fa-3x yellow"></i>
+            <i class="fa fa-home fa-4x yellow"></i>
             <%-- <p class="no-margin no-padding yellow">Home</p> --%>
         </a>
     </div>
     <!-- Time and weather-->
     <div class="col-md-2 hidden-xs hidden-sm text-center yellow-bg">
         <h2 class="moment-in-time grey no-padding">The time is?</h2>
-        <small class="grey">Local time, Nairobi.</small>
+        <small class="grey uppercase">Local time</small>
     </div>
     <!-- The navigation menu-->
     <div class="col-sm-6 col-md-5 hidden-xs">
@@ -69,17 +69,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-5 no-padding no-margin emergency-services-bar">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <i class="fa fa-bell fa-2x fa-borer">&nbsp;</i>
+            
+            <%-- EMERGENCIES LINK TAB --%>
+            <div class="col-xs-6 col-sm-5 no-padding no-margin emergency-services-bar white">
+                <a href="{$BaseHref}emergency-services" class="white">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <i class="fa fa-bell fa-3x fa-borer">&nbsp;</i>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="uppercase no-margin text-justify">
+                                <span >Emergency Services</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-xs-8">
-                        <p class="uppercase no-margin text-justify">
-                            <span >Emergency Services</span>
-                        </p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
