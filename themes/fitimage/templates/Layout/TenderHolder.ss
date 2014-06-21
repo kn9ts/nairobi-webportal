@@ -1,4 +1,5 @@
 <div class="row">
+    <% include Pagination %>
     <div class="col-xs-12">
         <div class="blog-container fitimage white-bg">
             <div class="col-xs-12 col-7 search-results">
@@ -8,7 +9,7 @@
             </div>
             <% if $AvailableTenders %>
              <div class="row">
-                <% loop $AvailableTenders %>
+                <% loop $PaginatedPages %>
                 <%-- Make them change sides --%>
                 <% if $Odd %>
                 <div class="col-xs-12">
@@ -78,6 +79,9 @@
                     <h1 class="green">No tenders available at the moment.</h1>
                 </div>
             <% end_if %>
+        </div>
+        <div class="row pager-space">
+            <% include Pagination %>
         </div>
     </div>
 </div>

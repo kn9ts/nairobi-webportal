@@ -68,7 +68,7 @@
             <!-- Blog posts -->
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blog-section no-padding">
                 <div class="blog-tab">
-                    <h3 class="no-padding no-margin">News, Events and Updates
+                    <h3 class="no-padding no-margin">News/Updates
                         <br/>
                         <small class="muted">The little things that matter.</small>
                     </h3>

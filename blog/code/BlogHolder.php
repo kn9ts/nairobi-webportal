@@ -190,15 +190,16 @@ class BlogHolder extends BlogTree implements PermissionProvider {
 
 class BlogHolder_Controller extends BlogTree_Controller {
 
-	private static $allowed_actions = array(
-		'index',
-		'tag',
-		'date',
-		'metaweblog',
-		'postblog' => 'BLOGMANAGEMENT',
-		'post',
-		'BlogEntryForm' => 'BLOGMANAGEMENT',
-	);
+	// private static $allowed_actions = array(
+	// 	'index',
+	// 	'tag',
+	// 	'date',
+	// 	'metaweblog',
+	// 	'postblog' => 'BLOGMANAGEMENT',
+	// 	'post',
+	// 	'BlogEntryForm' => 'BLOGMANAGEMENT',
+	// 	'PaginatedPages'
+	// );
 	
 	function init() {
 		parent::init();
@@ -322,4 +323,16 @@ class BlogHolder_Controller extends BlogTree_Controller {
 
 		$this->redirect($this->Link());
 	}
+
+	/**
+     * Returns a paginated list of all pages in the site, and limits the items displayed to 4 per page.
+     */
+    public function PaginatedPages() {
+    	$blogHolderId = $this->ID;
+    	$list = BlogEntry::get()->filter(array("ParentID" => "{$blogHolderId}"));
+		$paginatedItems = new PaginatedList($list, $this->request);
+		$paginatedItems->setPageLength(4);
+    	return $paginatedItems;
+	}
+
 }

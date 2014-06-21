@@ -1,22 +1,25 @@
-<% if $Results.MoreThanOnePage %>
-<div id="PageNumbers" class="col-xs-12">
-    <ul class="pagination">
-        <% if $Results.NotFirstPage %>
-        <li><a class="prev" href="$Results.PrevLink" title="View the previous page">&larr;</a></li>
-        <% end_if %>
-        <% loop $Results.Pages %>
-            <% if $CurrentBool %>
-            <li class="disabled">$PageNum</li>
-            <% else %>
-            <li><a href="$Link" title="View page number $PageNum" class="go-to-page">$PageNum</a></li>
-            <% end_if %>
-        <% end_loop %>
-        <% if $Results.NotLastPage %>
-        <li><a class="next" href="$Results.NextLink" title="View the next page">&rarr;</a></li>
-        <% end_if %>
-    </div>
-</div>
+<% if $PaginatedPages.MoreThanOnePage %>
 <div class="col-xs-12">
-    <p>Viewing page $Results.CurrentPage of $Results.TotalPages</p>
+    <ul class="pager">
+        <% if $PaginatedPages.NotFirstPage %>
+        <li class="previous">
+            <a href="$PaginatedPages.PrevLink">&larr; Older</a>
+        </li>
+        <% else %>
+        <li class="previous disabled">
+            <a href="$PaginatedPages.PrevLink">&larr; Older</a>
+        </li>
+        <% end_if %>
+        
+        <% if $PaginatedPages.NotLastPage %>
+        <li class="next">
+            <a class="next" href="$PaginatedPages.NextLink">Newer &rarr;</a>
+        </li>
+        <% else %>
+        <li class="next disabled">
+            <a class="next" href="$PaginatedPages.NextLink">Newer &rarr;</a>
+        </li>
+        <% end_if %>
+    </ul>
 </div>
 <% end_if %>

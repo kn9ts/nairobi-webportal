@@ -54,7 +54,18 @@ class TenderHolder_Controller extends Page_Controller {
     public function getAvailableTenders() {
         $tenders = TenderPage::get()->Count();
         // BlogEntry::get()->sort('Date DESC')->limit($num);
-        return $tenders > 0 ? TenderPage::get()->filter(array('EndDate:GreaterThan' => date('dd/mm/YYYY')))->sort('EndDate DESC')->limit(10) : false; //Filter by ID of every event and ID of it's parent
+        return $tenders > 0 ? TenderPage::get()->filter(array('EndDate:GreaterThan' => date('dd/mm/YYYY')))->sort('EndDate DESC') : false; //Filter by ID of every event and ID of it's parent
     }
+
+    /**
+     * Returns a paginated list of all pages in the site, and limits the items displayed to 4 per page.
+     */
+    public function PaginatedPages() {
+        $list = ($this->getAvailableTenders()) ? $this->getAvailableTenders(): $this->Children();
+        $paginatedItems = new PaginatedList($list, $this->request);
+        $paginatedItems->setPageLength(5);
+        return $paginatedItems;
+    }
+
 }
 

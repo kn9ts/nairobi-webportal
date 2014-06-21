@@ -16,8 +16,8 @@
     </div>
     <div class="col-xs-12">
     	<div class="row container">
-	    	<% if BlogEntries %>
-	    	<% loop BlogEntries %>
+	    	<% if PaginatedPages %>
+	    	<% loop PaginatedPages %>
 	    	<div class="col-sm-6 col-md-3">
 	            <div class="post-wrapper">
 	                <article class="post">
@@ -57,7 +57,7 @@
                 </div>
 			<%-- <h2><% _t('BlogHolder_ss.NOENTRIES', 'There are no blog entries') %></h2> --%>
 			<% end_if %>
-			<% include BlogPagination %>
+			<% include Pagination %>
     	</div>
     </div>
 </div>

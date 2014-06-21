@@ -7,9 +7,9 @@
 </div>
 <div class="row">
     <div class="col-sm-12 col-md-7 search-results">
-    <% if $Events %>
-        <% loop $Events %>
-        <div classs="col-xs-12" id="SearchResults">
+        <% if $PaginatedPages %>
+        <% loop $PaginatedPages %>
+        <div cls="col-xs-12" id="SearchResults">
             <div class="panel">
                 <div class="panel-body">
                     <h3> <a href="$Link">$Title</a> <small class="yellow">$Date.Long</small></h3>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <% end_loop %>
-    <% else %>
+        <% else %>
         <div class="jumbotron">
             <div class="jumbotron">
                 <h1 class="text-success"><i class="fa fa-meh-o">&nbsp;</i>Nothing interesting happening or has happened at the moment.</h1>
@@ -34,10 +34,10 @@
                 </a>
             </div>
         </div>
-    <% end_if %>
-
-    <div class="space">&nbsp;</div>
+        <% end_if %>
+        <div class="space">&nbsp;</div>
     </div>
+
     <div class="col-xs-12 col-md-5">
         <div class="col-xs-12 blog-section">
             <h3 class="no-padding no-margin">News, Events and Updates
@@ -58,4 +58,10 @@
             <% end_if %>
         </div>
     </div>
+
+    <%-- Pagination --%>
+    <div class="col-sm-12 col-md-7">
+        <% include Pagination %>
+    </div>
+
 </div>

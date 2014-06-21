@@ -96,7 +96,7 @@ class EventHolder_Controller extends Page_Controller {
 	  */
 	public function PaginatedPages() {
 		$paginatedItems = new PaginatedList($this->Children(), $this->request);
-		$paginatedItems->setPageLength(4);
+		$paginatedItems->setPageLength(5);
     	return $paginatedItems;
 	}
 

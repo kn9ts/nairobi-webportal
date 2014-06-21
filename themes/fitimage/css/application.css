@@ -1334,10 +1334,16 @@ text-align: center;*/
  .label, .btn {
     border-radius: 0;
 }
+.pager li > a, .pager li > span{
+    border-radius: 0;
+}
 /*some other overrides*/
  .blog-container h1 small {
     letter-spacing: -.1em;
     line-height: .1em;
+}
+.pager-space{
+    margin-bottom: 50px
 }
 /*Horizontal bordering line on h1-h6 elements
 eg. ----------- Title ------------*/
