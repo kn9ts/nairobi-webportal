@@ -83,7 +83,7 @@
     <div class="hidden-lg hidden-md space"></div>
 
     <!-- Content of the site goes in here-->
-    <% if $ClassName = HomePage || $ClassName = TenderHolder || $ClassName = EventHolder %>
+    <% if $ClassName = HomePage || $ClassName = EventHolder %>
     <div data-part="homepage content" class="homepage pale-grey-bg">
         <div class="container-fluid content">
             $Layout
@@ -131,7 +131,7 @@
         <script type="text/javascript" src="{$ThemeDir}/js/application.js"></script>
         <script type="text/javascript" src="{$ThemeDir}/js/execute.js"></script>
 
-        <% if $ClassName = SectionPage || $ClassName = BlogEntry || $ClassName = HomePage || $ClassName = TenderPage || $ClassName = EventPage %>
+        <% if $ClassName = SectionPage || $ClassName = BlogEntry || $ClassName = HomePage || $ClassName = TenderHolder || $ClassName = EventPage %>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f4ac4c2544a9339"></script>
         <% end_if %>

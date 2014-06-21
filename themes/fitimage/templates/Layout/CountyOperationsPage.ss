@@ -1,4 +1,4 @@
-<div class="col-xs-12 whit-bg">
+<div class="col-xs-12">
     <div class="blog-container fitimage white-bg">
         <div class="row">
             <div class="col-xs-12">
@@ -20,7 +20,7 @@
                         <li>
                             <a class="education" href="#education" title="Education, Youth Affairs, Culture, Children and Social Services Sector">
                     Education, youth affairs, culture, children and social services sector
-                </a>
+                            </a>
                         </li>
                         <li><a class="health" href="#health" title="">health services sector</a>
                         </li>

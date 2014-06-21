@@ -111,22 +111,24 @@ $(function() {
 
     }
 
-    $(".fancybox").attr('rel', 'gallery').fancybox({
-        padding: 0
-        // margin: 15,
-        // // nextEffect: 'fade',
-        // // prevEffect: 'none',
-        // autoCenter: false,
-        // afterLoad: function() {
-        //     $.extend(this, {
-        //         aspectRatio: false,
-        //         type: 'html',
-        //         width: '100%',
-        //         height: '100%',
-        //         content: '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
-        //     });
-        // }
-    });
+    if ("fancybox" in jQuery) {
+        $(".fancybox").attr('rel', 'gallery').fancybox({
+            padding: 0
+            // margin: 15,
+            // // nextEffect: 'fade',
+            // // prevEffect: 'none',
+            // autoCenter: false,
+            // afterLoad: function() {
+            //     $.extend(this, {
+            //         aspectRatio: false,
+            //         type: 'html',
+            //         width: '100%',
+            //         height: '100%',
+            //         content: '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+            //     });
+            // }
+        });
+    }
 
     // $('body').flowtype({
     //     minimum: 400,

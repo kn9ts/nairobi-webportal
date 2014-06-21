@@ -52,7 +52,9 @@ class TenderHolder_Controller extends Page_Controller {
 
     // Get all the Tenders that have not expired
     public function getAvailableTenders() {
-        $holder = TenderHolder::get()->First();
-        return ($holder) ? TenderPage::get()->filter('ParentID', $holder->ID)->filter(array('EndDate:GreaterThan' => date('dd/mm/YYYY'))) : false; //Filter by ID of every event and ID of it's parent
+        $tenders = TenderPage::get()->Count();
+        // BlogEntry::get()->sort('Date DESC')->limit($num);
+        return $tenders > 0 ? TenderPage::get()->filter(array('EndDate:GreaterThan' => date('dd/mm/YYYY')))->sort('EndDate DESC')->limit(10) : false; //Filter by ID of every event and ID of it's parent
     }
 }
+

@@ -56,10 +56,10 @@ __________________________________________________________*/
     letter-spacing: -0.1em;
 }
 .fitimage em {
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     color: #1B1B1B;
     line-height: 1.2em;
-    font-style: normal;
+    font-style: italic;
 }
 .fitimage p {
     font-size: 0.65em;

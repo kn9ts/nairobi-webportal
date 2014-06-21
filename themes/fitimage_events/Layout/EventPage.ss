@@ -47,6 +47,10 @@
                 </tr>
             </table>
         </div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox space text-center"></div>
     </div>
+
+    <% include DisqusThread %>
 </div>
 <div class="space"></div>

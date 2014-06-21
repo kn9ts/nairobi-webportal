@@ -12,7 +12,8 @@ class TenderPage extends Page {
         "IconType" => "Text"
     );
 
-    static $has_one = array ( 
+    static $has_one = array (
+        'TenderImage' => 'Image',
 		'TenderDocument' => 'File'
 	);
 
@@ -45,23 +46,34 @@ class TenderPage extends Page {
         $startDateField->setConfig('dateformat', 'dd/MM/YYYY');
         $fields->addFieldToTab('Root.Main', $startDateField, 'Content');
 
-        $endDateField = new DateField('EndDate', 'Tender Submission End Date');  //Param 1 Date == Name of //Date field as declared in the $db array
+        $endDateField = new DateField('EndDate', 'Tender Closing Date');  //Param 1 Date == Name of //Date field as declared in the $db array
         $endDateField->setConfig('showcalendar', true);
         $endDateField->setConfig('dateformat', 'dd/MM/YYYY');
-        $fields->addFieldToTab('Root.Main', $endDateField, 'Content');
 
+        $fields->addFieldToTab('Root.Main', $endDateField, 'Content');
         $fields->addFieldToTab('Root.Main', new TextField('IconType', 'Icon Type'), 'Content');
-        $fields->addFieldToTab("Root.Document", new UploadField('TenderDocument', 'Attach Detailed Tender Document'));
+
+        // Tender Representative Image
+        $tenderImage = new UploadField('TenderImage', 'Upload Tender Image');
+        $tenderImage->setAllowedFileCategories('image');
+        $fields->addFieldToTab("Root.Image", $tenderImage);
+
+        // Any document to be attached for the tender
+        $tenderDocument = new UploadField('TenderDocument', 'Attach Detailed Tender Document');
+        $tenderDocument->setAllowedFileCategories('doc'); //allow only the attachments of documents
+        // $tenderDocument->setFolderName('TenderDocs');
+        $fields->addFieldToTab("Root.Document", $tenderDocument);
 
         $this->extend('updateCMSFields', $fields);
         return $fields;
     }
 
+    function isDocumentAttached() {
+        return $this->TenderDocument()->getFileName() !== "assets/" ? true: false;
+    }
+
 }
 
 class TenderPage_Controller extends Page_Controller {
-	// function init() {
-	// 	parent::init();
-	// 	Requirements::themedCSS("gallery_page");
-	// }
+
 }

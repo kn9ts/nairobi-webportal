@@ -1,4 +1,4 @@
-<div class="col-xs-12 whit-bg">
+<div class="col-xs-12">
     <div class="blog-container fitimage white-bg">
         <div class="row">
             <div class="col-xs-12">

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12 col-7 search-results">
         <h1 class="uppercase">Events
-            <small class="searchQuery">What's happening or happened around <span class="green">Nairobi</span></small>
+            <small class="searchQuery">What's <span class="green">coming</span> up.</small>
         </h1>
     </div>
 </div>

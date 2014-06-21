@@ -44,5 +44,7 @@
 		<% end_if %>
     </div> --%>
 	<%-- $PageComments --%>
-</div>
+
+	<% include DisqusThread %>
+	</div>
 <div class="space-lg"></div>

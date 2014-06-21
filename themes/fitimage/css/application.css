@@ -638,14 +638,14 @@ P.arrow.grey-arrow I:hover {
     /*padding: 1em;*/
     /*padding: .5em; When social icons are added to the top*/
 }
- .welcome-nav .row div[class*=col]{
-    padding: 1em ;
- }
-.welcome-nav div[class*=col].gallery-link{
+.welcome-nav .row div[class*=col] {
+    padding: 1em;
+}
+.welcome-nav div[class*=col].gallery-link {
     padding: 0;
     margin: 0
 }
-.welcome-nav div[class*=col].gallery-link .row > div{
+.welcome-nav div[class*=col].gallery-link .row > div {
     padding: .5em
 }
 .welcome-nav H5 {
@@ -1153,8 +1153,7 @@ border-radius: 50%;*/
 .blog-tag-container a:not(.btn) {
     color: white;
 }
-
-.eventpage .thumbnail img{
+.eventpage .thumbnail img {
     width: 100%;
     height: auto
 }
@@ -1210,7 +1209,7 @@ border-radius: 50%;*/
     letter-spacing: -0.05em;
     padding-top: 10px;
 }
-.emergency-tab .main-hotline .em-info{
+.emergency-tab .main-hotline .em-info {
     width: 100%;
     margin: 0 auto;
 }
@@ -1330,6 +1329,15 @@ text-align: center;*/
         right: 30px;
         margin-top: -21px;
     }
+}
+/*BOOTSTRATP OVERRIDES*/
+ .label, .btn {
+    border-radius: 0;
+}
+/*some other overrides*/
+ .blog-container h1 small {
+    letter-spacing: -.1em;
+    line-height: .1em;
 }
 /*Horizontal bordering line on h1-h6 elements
 eg. ----------- Title ------------*/

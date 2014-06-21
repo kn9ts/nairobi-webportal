@@ -1,54 +1,84 @@
 <div class="row">
-    <div class="col-xs-12 col-7 search-results">
-        <h1 class="uppercase">$Title
-            <small class="searchQuery">Available <span class="green">opportunities</span></small>
-        </h1>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-12 col-md-7 search-results">
-    <% if $AvailableTenders %>
-        <% loop $AvailableTenders %>
-        <div classs="col-xs-12" id="SearchResults">
-            <div class="panel">
-                <div class="panel-body">
-                    <h3> <a href="$Link">$TenderName</a></h3>
-                    <small>Start Date: $StartDate.Long</small>
-                    <br />
-                    <small>End Date: $EndDate.Long</small>
-                    <% if $Content %>
-                    <p class="text-muted">$Content.LimitWordCountXML</p>
-                    <% end_if %>
-                </div>
+    <div class="col-xs-12">
+        <div class="blog-container fitimage white-bg">
+            <div class="col-xs-12 col-7 search-results">
+                <h1 class="uppercase">$Title
+                    <small class="uppercase">Available <span class="green">opportunities</span> </small>
+                </h1>
             </div>
-        </div>
-        <% end_loop %>
-    <% else %>
-        <div class="jumbotron">
-            <h1 class="green">No tenders available at the moment.</h1>
-        </div>
-    <% end_if %>
+            <% if $AvailableTenders %>
+             <div class="row">
+                <% loop $AvailableTenders %>
+                <%-- Make them change sides --%>
+                <% if $Odd %>
+                <div class="col-xs-12">
+                    <div class="col-sm-12 col-md-8">
+                        <h2 class="no-margin no-padding">$Title</h2>
+                        <small class="label label-lg label-success">Announced Date: $StartDate.Long</small>
+                        <%-- <br /> --%>
+                        <small class="label label-lg label-danger">Closing Date: $EndDate.Long</small>
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_sharing_toolbox space"></div>
+                        <%-- <div class="addthis_native_toolbox space"></div> --%>
+                        <% if $Content %>
+                        <p class="text-muted">$Content</p>
+                        <% end_if %>
 
-    <div class="space">&nbsp;</div>
-    </div>
-    <div class="col-xs-12 col-md-5">
-        <div class="col-xs-12 blog-section">
-            <h3 class="no-padding no-margin">News, Events and Updates
-                <br/>
-                <small class="muted">The little things that matter.</small>
-            </h3>
-            <hr class="margin">
-            <% if LatestUpdates %>
-            <div class="row blog-row">
-                <% loop $LatestUpdates %>
-                    <% include BlogPreviewSection %>
+                        <% if isDocumentAttached %>
+                        <%-- <p>$isDocumentAttached</p> --%>
+                        <a href="{$TenderDocument.AbsoluteURL}" download="{$TenderName}.{$TenderDocument.Extension}" class="text-muted btn btn-md btn-success">Download Document</a>
+                        <% end_if %>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <% if $TenderImage %>
+                        <%-- $CroppedImage(400,400) --%>
+                        <img class="img-responsive" src="{$TenderImage.CroppedImage(400,400).AbsoluteURL}" />
+                        <% else %>
+                        <img class="img-responsive" src="{$ThemeDir}/images/ncc07.jpg">
+                        <% end_if %>
+                        <p class="caption">$Title</p>
+                    </div>
+                </div>
+                <% else %>
+                <div class="col-xs-12">
+                    <div class="col-sm-12 col-md-4">
+                        <% if $TenderImage %>
+                        <%-- $CroppedImage(400,400) --%>
+                        <img class="img-responsive" src="{$TenderImage.CroppedImage(400,400).AbsoluteURL}" />
+                        <% else %>
+                        <img class="img-responsive" src="{$ThemeDir}/images/ncc07.jpg">
+                        <% end_if %>
+                        <p class="caption">$Title</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <h2 class="no-margin no-padding">$Title</h2>
+                        <small class="label label-lg label-success">Start Date: $StartDate.Long</small>
+                        <%-- <br /> --%>
+                        <small class="label label-lg label-danger">End Date: $EndDate.Long</small>
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_sharing_toolbox space"></div>
+                        <%-- <div class="addthis_native_toolbox space"></div> --%>
+                        <% if $Content %>
+                        <p class="text-muted">$Content</p>
+                        <% end_if %>
+
+                        <% if isDocumentAttached %>
+                        <%-- <p>$isDocumentAttached</p> --%>
+                        <a href="{$TenderDocument.AbsoluteURL}" download="{$TenderName}.{$TenderDocument.Extension}" class="text-muted btn btn-md btn-success">Download Document</a>
+                        <% end_if %>
+                    </div>
+                </div>
+                <% end_if %>
                 <% end_loop %>
-            </div>    
-            <% else %>
-            <div class="jumbotron">
-                <p class="muted"> Nothing <span class="label label-success label-sm">new</span> yet!! But you will be the 1st to know if anything pops up!</p>
             </div>
+            <% else %>
+                <div class="jumbotron">
+                    <h1 class="green">No tenders available at the moment.</h1>
+                </div>
             <% end_if %>
         </div>
     </div>
 </div>
+
