@@ -10,17 +10,6 @@ class EventHolder extends Page{
         "IconType" => "Text"
     );
 
-	/*private static $db = array(
-		'Title'		=> 'Text'
-	);
-
-	public function getCMSFields(){
-		$fields = parent::getCMSFields();
-		$titleField   = new TextField('Title');
-		$fields->addFieldToTab('Root.Main', $titleField, 'Content');
-		return $fields;
-	}*/
-
 	private static $default_parent = 'Homepage';
 
     static $defaults = array(

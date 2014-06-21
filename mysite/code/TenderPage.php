@@ -40,7 +40,7 @@ class TenderPage extends Page {
         $fields->addFieldToTab('Root.Main', new TextField('TenderNo', 'Tender No.'), 'Content');
         // $fields->addFieldToTab('Root.Main', new TextField('Description'), 'Content');
 
-        $startDateField = new DateField('StartDate', 'Tender Submission Start Date (for example: 20/12/2010)');  //Param 1 Date == Name of //Date field as declared in the $db array
+        $startDateField = new DateField('StartDate', 'Tender Start Date (for example: 20/12/2010)');  //Param 1 Date == Name of //Date field as declared in the $db array
         $startDateField->setConfig('showcalendar', true);
         $startDateField->setConfig('dateformat', 'dd/MM/YYYY');
         $fields->addFieldToTab('Root.Main', $startDateField, 'Content');

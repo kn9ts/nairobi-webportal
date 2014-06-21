@@ -22,5 +22,6 @@
         <% else_if $ClassName = SectionPage %>
         <h3 class="green">{$Description}</h3>
         <% end_if %>
+        <div class="addthis_sharing_toolbox text-center padding-sm"></div>
     </div>
 </div>

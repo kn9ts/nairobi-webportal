@@ -10,8 +10,8 @@ class EventPage extends Page {
 		//'Details'	=> 'Text'
 	);
 	
-	private static $has_one = array(
-        'Photo' => 'Image'
+	private static $many_many = array(
+        'EventImages' => 'Image'
     );
 	
 	private static $description = "A Single Event";
@@ -30,7 +30,10 @@ class EventPage extends Page {
 			$endTime->setConfig('timeformat', 'h:m a');
 			//$detailsField = new TextareaField('Event Details');
 			//$detailsField->setConfig();
-			$eventPhoto = new UploadField('Photo');
+			$eventPhoto = new UploadField('EventImages', 'Upload Event Images (4 images maximum)');
+			$eventPhoto->setAllowedFileCategories('image');
+			$eventPhoto->setAllowedMaxFileNumber(4);
+			$eventPhoto->setFolderName('EventImages');
 
 			//add them fields to the tabs
 			$fields->addFieldToTab('Root.Main', $titleField, 'Content');
@@ -48,3 +51,9 @@ class EventPage extends Page {
 class EventPage_Controller extends Page_Controller{
 
 }
+
+class EventImageExtension extends DataExtension {
+    private static $belongs_many_many = array('Events' => 'EventPage');
+}
+Image::add_extension('EventImageExtension');
+

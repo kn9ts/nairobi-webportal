@@ -1153,6 +1153,11 @@ border-radius: 50%;*/
 .blog-tag-container a:not(.btn) {
     color: white;
 }
+
+.eventpage .thumbnail img{
+    width: 100%;
+    height: auto
+}
 /*-------- EMERGENCY TAB STYLING -----------------*/
  .EmergencyServicesPage .content-fluid, .EmergencyServicesPage #page-content {
     padding: 0;
@@ -1284,10 +1289,16 @@ dl i:before {
 }
 @media (max-width: 768px) {
     .emergency-tab .jumbotron.em-page-header h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
-    .others, .others div {
-        min-height: 150px
+    .emergency-tab .jumbotron.em-page-header span {
+        padding: 0 .2em;
+        top: 30%;
+        left: 32%
+    }
+    .hotline-links div {
+        max-height: 150px;
+        border-bottom: 2px solid #232323
     }
 }
 /*Action Box

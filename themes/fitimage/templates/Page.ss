@@ -79,6 +79,9 @@
     <% include PageHeader %>
     <% end_if %>
 
+    <%-- small top spacing for smaller devices --%>
+    <div class="hidden-lg hidden-md space"></div>
+
     <!-- Content of the site goes in here-->
     <% if $ClassName = HomePage || $ClassName = TenderHolder || $ClassName = EventHolder %>
     <div data-part="homepage content" class="homepage pale-grey-bg">
@@ -117,20 +120,21 @@
         <!-- consistent with the size of the page-->
         <script type="text/javascript" src="{$ThemeDir}/js/flowtype.js"></script>
 
-        <% if $ClassName = GalleryPage %>
+        <% if $ClassName = GalleryPage || $ClassName = EventPage %>
         <script type="text/javascript" src="{$ThemeDir}/js/jquery.masonry.min.js"></script>
         <!-- Add fancyBox -->
         <link rel="stylesheet" href="{$ThemeDir}/js/fancybox/jquery.fancybox.css" type="text/css"/>
         <script type="text/javascript" src="{$ThemeDir}/js/fancybox/jquery.fancybox.pack.js"></script>
         <% end_if %>
 
-        <%-- AddThis plugin --%>
-        <%-- <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f4ac4c2544a9339"></script> --%>
-
         <!-- Your app functions script -->
         <script type="text/javascript" src="{$ThemeDir}/js/application.js"></script>
         <script type="text/javascript" src="{$ThemeDir}/js/execute.js"></script>
+
+        <% if $ClassName = SectionPage || $ClassName = BlogEntry || $ClassName = HomePage || $ClassName = TenderPage || $ClassName = EventPage %>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f4ac4c2544a9339"></script>
+        <% end_if %>
     </application-engine>
 
 </body>

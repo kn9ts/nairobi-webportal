@@ -4,9 +4,10 @@
     background-image: url("../images/Nairobi County-59.jpg");
     background-size: cover;
     background-position: center 30%;
-    height: 400px;
+    min-height: 400px;
     /*background-attachment: fixed;*/
     z-index: 9090;
+    padding-bottom: 1em;
 }
 .section-header .header-row {
     font-size: 1em;

@@ -11,11 +11,17 @@ $(function() {
 
     var hidePageMenus = function(bool) {
         var density = bool == undefined ? 0.2 : 1;
-        $('#ncc-page-bar').animate({opacity: density}, 100, 'linear', function() {
+        $('#ncc-page-bar').animate({
+            opacity: density
+        }, 100, 'linear', function() {
             $(this).mouseenter(function() {
-                $(this).animate({opacity: 1}, 100, 'linear');
+                $(this).animate({
+                    opacity: 1
+                }, 100, 'linear');
             }).mouseleave(function() {
-                $(this).animate({opacity: density}, 100, 'linear');
+                $(this).animate({
+                    opacity: density
+                }, 100, 'linear');
             })
         });
         // $('#navigation-bar').slideToggle();
@@ -101,28 +107,26 @@ $(function() {
             });
             var msnry = container.data('masonry');
             console.log(msnry);
-
-            $(".fancybox")
-                .attr('rel', 'gallery')
-                .fancybox({
-                    padding: 0
-                    // margin: 15,
-                    // // nextEffect: 'fade',
-                    // // prevEffect: 'none',
-                    // autoCenter: false,
-                    // afterLoad: function() {
-                    //     $.extend(this, {
-                    //         aspectRatio: false,
-                    //         type: 'html',
-                    //         width: '100%',
-                    //         height: '100%',
-                    //         content: '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
-                    //     });
-                    // }
-                });
         })
 
     }
+
+    $(".fancybox").attr('rel', 'gallery').fancybox({
+        padding: 0
+        // margin: 15,
+        // // nextEffect: 'fade',
+        // // prevEffect: 'none',
+        // autoCenter: false,
+        // afterLoad: function() {
+        //     $.extend(this, {
+        //         aspectRatio: false,
+        //         type: 'html',
+        //         width: '100%',
+        //         height: '100%',
+        //         content: '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+        //     });
+        // }
+    });
 
     // $('body').flowtype({
     //     minimum: 400,
