@@ -21,7 +21,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array ();
+	private static $allowed_actions = array ('ContactForm' => true);
 
 	public function init() {
 		parent::init();
@@ -56,4 +56,46 @@ class Page_Controller extends ContentController {
 		// 	)
 		// );
 	}
+
+	public function ContactForm() {
+		$fields = new FieldList(
+            new TextField('Name'),
+            new EmailField('EmailAddress', 'Your Email Address'),
+            new TextField('Subject'),
+            new TextareaField('Message')
+        );
+         
+        // Create actions
+        $actions = new FieldList(
+            new FormAction('SendEmail', 'Send')
+        );
+        $validate = new RequiredFields('Name', 'EmailAddress', 'Subject', 'Message');
+     
+        return new Form($this, 'ContactForm', $fields, $actions, $validate);
+	}
+
+	public function SendEmail($data, $form) { 
+        $email = new Email(); 
+          
+        $email->setTo('eugenemutai@gmail.com'); 
+        $email->setFrom($data['EmailAddress']); 
+        $email->setSubject("Enquiry Message: {$data['Subject']}"); 
+          
+        $messageBody = " 
+            <p><strong>Name:</strong> {$data['Name']}</p> 
+            <p><strong>Message:</strong> {$data['Message']}</p> 
+        "; 
+        $email->setBody($messageBody); 
+        $email->send();
+        //return to submitted message
+        // Director::redirect(Director::baseURL(). $this->URLSegment . "/?success=1");
+        return array(
+            'Response' => 'Thank you for your feedback.'
+        );
+    }
+
+    //The function to test whether to display the Submit Text or not
+    public function isEmailSent() {
+        return isset($_REQUEST['success']) && $_REQUEST['success'] == "1";
+    }
 }

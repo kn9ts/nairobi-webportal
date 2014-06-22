@@ -6,6 +6,8 @@ class HomePage extends Page {
 }
 
 class HomePage_Controller extends Page_Controller {
+	private static $allowed_actions = array ('ContactForm' => true);
+
 	public function LatestUpdates($num = 2) {
     	// $holder = BlogHolder::get()->First();
     	return BlogEntry::get()->sort('Date DESC')->limit($num);	

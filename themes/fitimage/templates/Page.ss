@@ -97,6 +97,28 @@
     </div>
     <% end_if %>
 
+    <% if $ClassName != BlogEntry %>
+    <div data-part="email-form" class="pale-grey-bg">
+        <div class="container-fluid content pale-grey-bg">
+            <div class="row email-form" id="email-form">
+                <button type="button" class="close hidden-xs hidden-sm" aria-hidden="true">&times;</button>
+                <div class="col-xs-12 yellow-bg">
+                    <% if $Response %>
+                    <div class="grey-bg yellow text-center">
+                        <h1 class="padding-xs uppercase">$Response</h1>
+                    </div>
+                    <% end_if %>
+                    <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-lg-offset-1 col-lg-10 space">
+                        <h2 class="uppercase">Write to us:</h2>
+                        $ContactForm
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="splash overlay for-email hidden-xs"></div>
+    <% end_if %>
+
     </div>
     </div>
     <%-- </div> --%>

@@ -62,7 +62,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a class="blue" target="_blank" href="mailto:info@nairobi.go.ke">
+                            <a id="toggle-email-form" class="blue" target="_blank" href="#email-form">
                                 <i class="fa fa-envelope fa-2x"></i>
                             </a>
                         </div>

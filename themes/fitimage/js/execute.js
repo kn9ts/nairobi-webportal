@@ -34,33 +34,68 @@ $(function() {
     });
 
     //Resize the background image to the size of the body
-    if ($('body').hasClass('HomePage') && window.innerWidth >= 768) {
+    if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder') && window.innerWidth >= 768) {
         $('#page-header').height(function() {
-            var h = parseInt($(window).width()) > 768 ? $(document).height() : $(window).height() / 2;
+            var h = parseInt($(window).width()) > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
             return h; //parseInt(h) + 1;
         });
     } else {
         // $('.page-menu').remove();
     }
 
+    var once = 0;
     var windowAnimation = function() {
         $('.homepage').toggleClass('show-menu').css('background-color', function() {
-            var h = $(this).height() + $(this).height() / 4
-            if (document.URL.indexOf('SearchForm') > -1 || window.innerWidth >= 768) $('html, body').height(h);
+            var h = $(this).height() + $(this).height() / 8;
+            if (document.URL.indexOf('SearchForm') > -1 || window.innerWidth >= 768)
+                if (once <= 0) {
+                    // $('body').height(h);
+                    once++
+                }
             return $(this).css('background-color');
         });
-        if (window.innerWidth >= 768) $(' .toggle-menu-btn, .page-header').toggleClass('hide-page-header-items');
+        if (window.innerWidth >= 768) $('.toggle-menu-btn, .page-header').toggleClass('hide-page-header-items');
     }
 
-    $('.toggle-menu-btn a, button.close').on('click', function(e) {
+    $('.toggle-menu-btn a, .row-close-btn button.close').on('click', function(e) {
         e.preventDefault();
         windowAnimation();
     });
 
+    $('#toggle-email-form').click(function(e) {
+        if (window.innerWidth >= 768) {
+            e.preventDefault();
+            $('.overlay.for-email').fadeToggle(function() {
+                $('.email-form').toggleClass('show-email-form');
+            });
+        }
+    });
+
+    $('.email-form .close, .overlay.for-email').click(function() {
+        $('.overlay.for-email').fadeToggle(function() {
+            $('.email-form').toggleClass('show-email-form');
+        });
+    });
+
+    //If the contact form gets submitted, trigger this by default
+    if(document.URL.indexOf('ContactForm') > -1) {
+        $('.show-menu').css('top', '10%'); 
+        $('#toggle-email-form').click();
+    }
+
     //the Homepage shares the template with: Searchform, Tenders, Events
-    if (document.URL.indexOf('SearchForm') > -1 || document.URL.indexOf('opportunities') > -1 || document.URL.indexOf('happening') > -1) {
+    if (document.URL.indexOf('SearchForm') > -1 || document.URL.indexOf('happening') > -1) {
         windowAnimation();
     }
+
+    //Adding Tiny MCE to TextArea
+    // if (window.innerWidth >= 768 && $('body').hasClass('HomePage')) {
+    //     $.getScript("//tinymce.cachefly.net/4.1/tinymce.min.js", function() {
+    //         tinymce.init({
+    //             selector: 'textarea'
+    //         });
+    //     })
+    // }
 
     // FIXED MENU CAUSEROL
     // Using default configuration
@@ -129,14 +164,6 @@ $(function() {
             // }
         });
     }
-
-    // $('body').flowtype({
-    //     minimum: 400,
-    //     maximum: 1900,
-    //     minFont: 2,
-    //     maxFont: 60,
-    //     fontRatio: 90
-    // });
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID. 
     //- (function(b, o, i, l, e, r) {
