@@ -1,6 +1,6 @@
 <?php
 
-class Albums extends Page {
+class GalleryAlbums extends Page {
 
 	// Do not allow any page under the album page, should only carry images
 	private static $allowed_children = false;
@@ -20,7 +20,7 @@ class Albums extends Page {
 
 	// The images related to the album
 	static $has_many = array(
-		'Images' => 'Images'
+		'Images' => 'GalleryImages'
 	);
 
 	public function getCMSFields() {
@@ -56,6 +56,6 @@ class Albums extends Page {
 
 }
 
-class Albums_Controller extends Page_Controller {
+class GalleryAlbums_Controller extends Page_Controller {
 
 }

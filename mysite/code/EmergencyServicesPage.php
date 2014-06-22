@@ -1,6 +1,9 @@
 <?php
 
 class EmergencyServicesPage extends SectionPage {
+
+	private static $allowed_children = array('AddressCategory');
+
     // Some defaults
     // private static $icon = "themes/fitiimage/images/icons/games.png";
     private static $description = "Will hold informational pages";

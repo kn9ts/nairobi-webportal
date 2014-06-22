@@ -1,7 +1,7 @@
 <?php
 
 class HomePage extends Page {
-    private static $allowed_children = array('SectionHolder', 'TenderHolder', 'EventHolder', 'MiniSection', 'GalleryPage', 'SectionPage', 'CityBylawsPage', 'MapsPage');
+    private static $allowed_children = array('SectionHolder', 'TenderHolder', 'EventHolder', 'MiniSection', 'GalleryPage', 'SectionPage', 'CityBylawsPage', 'MapsPage', 'AddressBook');
     // private static $icon = "themes/fitiimage/images/icons/book.png";
 }
 

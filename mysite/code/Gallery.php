@@ -2,7 +2,7 @@
 
 class Gallery extends SectionPage {
 
-	private static $allowed_children = array('Albums');
+	private static $allowed_children = array('GalleryAlbums');
 
 	// Some defaults -- of it's own
     // private static $icon = "themes/fitiimage/images/icons/games.png";

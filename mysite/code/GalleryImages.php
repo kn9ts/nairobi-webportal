@@ -1,6 +1,6 @@
 <?php
 
-class Images extends DataObject{
+class GalleryImages extends DataObject{
 	
 	static $singular_name = 'Image'; 
 	static $plural_name = 'Images';
@@ -14,7 +14,7 @@ class Images extends DataObject{
 
     static $has_one = array ( 
 		'Image' => 'Image',
-		'Album' => 'Albums'
+		'Album' => 'GalleryAlbums'
 	);
 
 	public static $summary_fields = array(
@@ -26,7 +26,7 @@ class Images extends DataObject{
 
    	public function getCMSFields() {
     	$fields = parent::getCMSFields();
-    	$fields->removeFieldFromTab("Root.Images", "DateUploaded");
+    	// $fields->removeFieldFromTab("Root.Images", "DateUploaded");
     	return $fields;
   	}
 
