@@ -95,7 +95,8 @@ class EventHolder_Controller extends Page_Controller {
 	  *
 	  */
 	public function PaginatedPages() {
-		$paginatedItems = new PaginatedList($this->Children(), $this->request);
+		$list = EventPage::get()->filter(array('Date:GreaterThan' => date('dd/mm/YYYY')))->sort('Date ASC');
+		$paginatedItems = new PaginatedList($list, $this->request);
 		$paginatedItems->setPageLength(5);
     	return $paginatedItems;
 	}

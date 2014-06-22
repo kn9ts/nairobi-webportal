@@ -26,7 +26,7 @@
                         <a/>
                         <hr />
                         <%-- <p class="muted">$Description</p> --%>
-                        <span class="text-muted">$Content.LimitWordCount(20)</span>
+                        <span class="text-muted">$Content.LimitCharacters(120)</span>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-10 col-lg-10 padding-top">
                         <a href="about-the-county" class="uppercase abtncc text-center">
-                            <h4>About Nairobi City County</h4>
+                            <h4>About Nairobi City County Government</h4>
                         </a>
                     </div>
                 </div>
@@ -86,12 +86,12 @@
                     <% end_if %>
                 </div>
                 <% if LatestUpdates %>
-                <div class="col-xs-12 col-sm-6 col-md-12 padding text-center grey-bg yellow open-reader-link">
-                    <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-12 col-md-12 padding text-center grey-bg yellow open-reader-link">
+                    <div class="col-xs-3 col-sm-6 col-md-3">
                         <h3 class="fa fa-microphone yellow">&nbsp;</h3>
                     </div>
                     <a href="{$BaseHref}home/news-and-updates/">
-                        <div class="col-xs-9">
+                        <div class="col-xs-9 col-sm-6 col-md-9">
                             <h3 class="yellow">
                                 <span>Open News Reader</span>
                             </h3>

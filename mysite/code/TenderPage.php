@@ -61,7 +61,7 @@ class TenderPage extends Page {
         // Any document to be attached for the tender
         $tenderDocument = new UploadField('TenderDocument', 'Attach Detailed Tender Document');
         $tenderDocument->setAllowedFileCategories('doc'); //allow only the attachments of documents
-        // $tenderDocument->setFolderName('TenderDocs');
+        $tenderDocument->setFolderName('Documents');
         $fields->addFieldToTab("Root.Document", $tenderDocument);
 
         $this->extend('updateCMSFields', $fields);

@@ -80,7 +80,7 @@
     <% end_if %>
 
     <%-- small top spacing for smaller devices --%>
-    <div class="hidden-lg hidden-md space"></div>
+    <%-- <div class="hidden-lg hidden-md space"></div> --%>
 
     <!-- Content of the site goes in here-->
     <% if $ClassName = HomePage || $ClassName = EventHolder %>
@@ -98,7 +98,7 @@
     <% end_if %>
 
     <% if $ClassName != BlogEntry %>
-    <div data-part="email-form" class="pale-grey-bg">
+    <div data-part="email-form" class="pale-grey-bg email-card">
         <div class="container-fluid content pale-grey-bg">
             <div class="row email-form" id="email-form">
                 <button type="button" class="close hidden-xs hidden-sm" aria-hidden="true">&times;</button>

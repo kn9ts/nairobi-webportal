@@ -3,11 +3,13 @@ $(function() {
     // Lungo.init();
     $(window).on("load", app.initialize);
 
-    $('.page-content').css('height', function() {
-        var h = $(this).height();
-        if (h < window.innerHeight) h = window.innerHeight;
-        return h;
-    });
+    if (window.innerWidth >= 768) {
+        $('.page-content').css('height', function() {
+            var h = $(this).height();
+            if (h < window.innerHeight) h = window.innerHeight;
+            return h;
+        });
+    }
 
     var hidePageMenus = function(bool) {
         var density = bool == undefined ? 0.2 : 1;
@@ -78,8 +80,8 @@ $(function() {
     });
 
     //If the contact form gets submitted, trigger this by default
-    if(document.URL.indexOf('ContactForm') > -1) {
-        $('.show-menu').css('top', '10%'); 
+    if (document.URL.indexOf('ContactForm') > -1) {
+        $('.show-menu').css('top', '10%');
         $('#toggle-email-form').click();
     }
 

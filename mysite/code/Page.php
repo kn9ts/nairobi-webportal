@@ -78,7 +78,7 @@ class Page_Controller extends ContentController {
         $email = new Email(); 
           
         $email->setTo('eugenemutai@gmail.com'); 
-        $email->setFrom($data['EmailAddress']); 
+        $email->setFrom($data['EmailAddress']);
         $email->setSubject("Enquiry Message: {$data['Subject']}"); 
           
         $messageBody = " 

@@ -292,7 +292,7 @@ h1 blockquote {
     left: 0;
     width: 101.5%;
     height: auto;
-    z-index: 99;
+    z-index: 390;
     background: #232323;
     color: #999;
 }
@@ -308,6 +308,9 @@ h1 blockquote {
 }
 .breadcrumbs-navbar small.bread ol li.active {
     /*color: #FFDE00;*/
+}
+/*Needs more spacing on smaller devices*/
+ @media(max-width: 768px) {
 }
 /**** THE NAV MENU *****/
  .bottom {
@@ -824,7 +827,7 @@ color: white;
     color: #232323;
 }
 /*THE EMAIL FORM*/
- .email-form input, .email-form textarea {
+ .email-form input, .email-form textarea, .email-form label {
     border-radius: 0;
     font-family: QuattrocentoSans, sans-serif;
     font-size: 1.2em;
@@ -854,11 +857,11 @@ color: white;
     top: -1%;
     right: 2%;
 }
-.show-email-form{
+.show-email-form {
     top: 0;
     opacity: 1;
 }
-.overlay{
+.overlay {
     display: none;
 }
 /* Category Item / Categories of Data
@@ -885,6 +888,7 @@ color: white;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     max-height: 220px;
+    width: 100%;
 }
 .category-item:hover .category-thumb IMG {
     transform: scale(1.1);
@@ -979,6 +983,7 @@ color: white;
 * --------------------------*/
  .post-wrapper {
     padding: 0;
+    margin-bottom: 1.5em;
     background: #FEFEFE;
 }
 .post {
@@ -1194,6 +1199,31 @@ color: white;
 .eventpage .thumbnail img {
     width: 100%;
     height: auto
+}
+/*Make it full on smaller screen devices*/
+ @media(max-width: 768px) {
+    .content {
+        width: 94%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .blog-container {
+        padding: .75em;
+    }
+    .padding-top {
+        padding: .5em .2em;
+    }
+    BODY.SectionPage .content {
+        width: 100%;
+        margin: 0;
+    }
+    }
+    BODY .email-card .content{
+        width: 86%;
+        margin: 0 7%;
+        padding-top: 2%;
+    }
+    
 }
 /*-------- EMERGENCY TAB STYLING -----------------*/
  .EmergencyServicesPage .content-fluid, .EmergencyServicesPage #page-content {
@@ -1445,4 +1475,11 @@ eg. ----------- Title ------------*/
     padding-bottom: 0;
     margin-bottom: 0;
     opacity: .5
+}
+/*ADDTHIS OVERRIDES*/
+ .at4-share-btn {
+    opacity: .3
+}
+.at4-share-btn:hover {
+    opacity: 1;
 }

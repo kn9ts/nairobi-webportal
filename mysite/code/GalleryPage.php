@@ -35,19 +35,12 @@ class GalleryPage extends Page {
         $fields->addFieldToTab('Root.Main', new TextField('Description'), 'Content');
         $fields->addFieldToTab('Root.Main', new TextField('bgColor', 'Background Color'), 'Content');
         $fields->addFieldToTab('Root.Main', new TextField('IconType', 'Icon Type'), 'Content');
-        // Select which folder to get images from
+        // Select which Folder to get images from
         $fields->addFieldToTab('Root.Main', new TreeDropdownField('FolderID', 'Choose Image Folder', 'Folder'), 'Content');
         $fields->removeFieldFromTab("Root.Main", "Content");
         // $this->extend('updateCMSFields', $fields);
         return $fields;
     }
-
-	function getFitimagePhotos() { 
-		$folder = GalleryPage::get()->first(); // Get the folder selected by the user in CMS
-		$galleryImages = DataObject::get("Image")->filter(array("ParentID" => "{$folder->FolderID}")); //->limit(20); //729
-        // Debug::show($folder);
-        return $galleryImages;
-	}
 
 }
 
@@ -56,4 +49,19 @@ class GalleryPage_Controller extends Page_Controller {
 	// 	parent::init();
 	// 	Requirements::themedCSS("gallery_page");
 	// }
+
+    function getFitimagePhotos() { 
+        $Folder = $this->Folder(); // Get the Folder selected by the user in CMS
+        $galleryImages = DataObject::get("Image")->filter(array("ParentID" => "{$Folder->ID}")); //->limit(20); //729
+        // Debug::show($Folder);
+        return $galleryImages;
+    }
+
+    public function PaginatedPages() {
+        $list = $this->getFitimagePhotos();
+        $paginatedItems = new PaginatedList($list, $this->request);
+        $paginatedItems->setPageLength(24);
+        return $paginatedItems;
+    }
+
 }
