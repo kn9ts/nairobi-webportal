@@ -1,4 +1,4 @@
-<!-- Who the fuck is NCC?? -->
+<!-- NCC DESCRIPTION DIRECT LINK -->
 <div class="row row-close-btn">
     <button type="button" class="close hidden-xs hidden-sm" aria-hidden="true">&times;</button>
     <div class="col-xs-12">

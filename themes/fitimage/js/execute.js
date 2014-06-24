@@ -38,7 +38,7 @@ $(function() {
     //Resize the background image to the size of the body
     if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder') && window.innerWidth >= 768) {
         $('#page-header').height(function() {
-            var h = parseInt($(window).width()) > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
+            var h = window.innerWidth > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
             return h; //parseInt(h) + 1;
         });
     } else {

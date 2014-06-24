@@ -39,7 +39,7 @@
     </div>
 
     <%-- Pagination --%>
-    <div class="col-sm-12">
+    <div class="col-xs-12">
         <% include Pagination %>
     </div>
 

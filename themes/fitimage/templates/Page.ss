@@ -14,7 +14,7 @@
  *  88""   88   88   88 88YbdP88  dP__Yb  Yb  "88 88""       o.`Y8b   88   Y8   8P 8I  dY  88 Yb   dP o.`Y8b 
  *  88     88   88   88 88 YY 88 dP""""Yb  YboodP 888888     8bodP'   88   `YbodP' 8888Y"  88  YbodP  8bodP' 
  *
- * http://www.fitimagestudios.com
+ * Website: http://www.fitimagestudios.com
  *
 -->
 <!DOCTYPE html>
@@ -47,6 +47,7 @@
     script(src="assets/js/html5shiv.js")
     script(src="assets/js/respond.min.js")
     -->
+
     <!-- Your stylesheets -->
     <% require themedCSS('application') %>
     <% require themedCSS('section') %>
@@ -97,7 +98,7 @@
     </div>
     <% end_if %>
 
-    <% if $ClassName != BlogEntry %>
+    <% if not $ClassName = BlogEntry || $ClassName != GalleryPage %>
     <div data-part="email-form" class="pale-grey-bg email-card">
         <div class="container-fluid content pale-grey-bg">
             <div class="row email-form" id="email-form">
@@ -153,10 +154,10 @@
         <script type="text/javascript" src="{$ThemeDir}/js/application.js"></script>
         <script type="text/javascript" src="{$ThemeDir}/js/execute.js"></script>
 
-        <% if $ClassName = SectionPage || $ClassName = BlogEntry || $ClassName = HomePage || $ClassName = TenderHolder || $ClassName = EventPage %>
+        <%-- <% if $ClassName = SectionPage || $ClassName = BlogEntry || $ClassName = HomePage || $ClassName = TenderHolder || $ClassName = EventPage %> --%>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f4ac4c2544a9339"></script>
-        <% end_if %>
+        <%-- <% end_if %> --%>
     </application-engine>
 
 </body>
