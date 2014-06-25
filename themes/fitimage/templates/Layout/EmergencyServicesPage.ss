@@ -25,7 +25,7 @@
             <div class="col-xs-12 red-bg">
                 <div class="jumbotron">
                     <div class="em-info">
-                        <h3 class="uppercase col-xs-offset-1">Fire and Ambulance Services</h3>
+                        <h3 class="uppercase col-xs-offset-0 col-md-offset-1">Fire and Ambulance Services</h3>
                         <div class="row">
                             <div class="col-xs-1 hidden-xs"></div>
                             <div class="col-xs-2 hidden-xs">
@@ -33,9 +33,10 @@
                             </div>
                             <div clas="col-xs-8 nos">
                                 <h1 class="text-justify no-margin padding-xs">
-                                    <span>020-2344599</span>                            
+                                    <span>DAIL 999</span>                            
                                 </h1>
-                                <h2 class="text-justify no-margin">020-2222181<em>&nbsp;/&nbsp;</em>020-2222182</h2>
+                                <%-- <small>Or these:</small> --%>
+                                <h2 class="text-justify no-margin">020-2222181<em>&nbsp;/&nbsp;</em>020-2222182<em>&nbsp;/&nbsp;</em>020-2344599</h2>
                             </div>
                         </div>
                     </div>

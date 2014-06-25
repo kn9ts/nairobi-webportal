@@ -103,4 +103,5 @@ class Page_Controller extends ContentController {
     public function isEmailSent() {
         return isset($_REQUEST['success']) && $_REQUEST['success'] == "1";
     }
+    
 }

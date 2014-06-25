@@ -26,8 +26,8 @@
 	        <% end_loop %>
 	        <% else %>
 	        <div class="jumbotron">
-                    <p class="muted">Nothing <span class="label label-success label-sm">interesting</span> to make you happy. But we are cooking up something for you.</p>
-                </div>
+                <p class="muted">Nothing <span class="label label-success label-sm">interesting</span> to make you happy. But we are cooking up something for you.</p>
+            </div>
 			<%-- <h2><% _t('BlogHolder_ss.NOENTRIES', 'There are no blog entries') %></h2> --%>
 			<% end_if %>
 			<% include Pagination %>

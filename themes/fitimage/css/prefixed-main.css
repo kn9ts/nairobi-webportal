@@ -286,7 +286,7 @@ _______________________________________________________________*/
     padding: 2em 0;
 }
 .fitimage .row > div[class*=col]:first-child {
-    padding-top: 0;
+    /*padding-top: 0;*/
 }
 .fitimage ul li a.education {
     background-image: url(../images/icons/04.png);
