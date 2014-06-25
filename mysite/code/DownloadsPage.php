@@ -1,6 +1,6 @@
 <?php
 
-class DownloadsPage extends SectionPage {
+class DownloadsPage extends MiniSection {
 
 	// Do not allow any page under the album page, should only carry images
 	private static $allowed_children = false;
@@ -46,6 +46,6 @@ class DownloadsPage extends SectionPage {
 
 }
 
-class DownloadsPage_Controller extends SectionPage_Controller {
+class DownloadsPage_Controller extends MiniSection_Controller {
 
 }
