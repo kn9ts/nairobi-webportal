@@ -8,7 +8,7 @@
                 $Content
             </div>
             <% if $Form %>
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 white-bg">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 white-bg padding">
                 $Form
             </div>
             <% end_if %>

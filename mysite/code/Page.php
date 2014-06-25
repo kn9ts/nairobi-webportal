@@ -58,9 +58,14 @@ class Page_Controller extends ContentController {
 	}
 
 	public function ContactForm() {
+		//Get all the sectors that are in the NewsSection
+		$sectorFields = new DropdownField('SelectedSector', 'Select Sector', BlogHolder::get()->map('ID', 'Title'));
+        $sectorFields->setEmptyString('Select Sector to send enquiry');
+
 		$fields = new FieldList(
             new TextField('Name'),
             new EmailField('EmailAddress', 'Your Email Address'),
+            $sectorFields,
             new TextField('Subject'),
             new TextareaField('Message')
         );
@@ -79,7 +84,7 @@ class Page_Controller extends ContentController {
           
         $email->setTo('eugenemutai@gmail.com'); 
         $email->setFrom($data['EmailAddress']);
-        $email->setSubject("Enquiry Message: {$data['Subject']}"); 
+        $email->setSubject("Enquiry Message: {$data['SelectedSector']}");
           
         $messageBody = " 
             <p><strong>Name:</strong> {$data['Name']}</p> 

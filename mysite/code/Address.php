@@ -12,7 +12,8 @@ class Address extends DataObject{
         'MailingAddress' => 'Varchar',
         'TelephoneNo' => 'Varchar', 
         'FaxNo' => 'Varchar', 
-        'EmailAddress' => 'Varchar'
+        'EmailAddress' => 'Varchar',
+        'Website' => 'Varchar'
         // 'Category' => 'Enum("Health", "Fire", "Police")'
     );
 

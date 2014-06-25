@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="col-xs-4">
                         <div class="jumbotron">
-                            <a href="" title="Health">
+                            <a href="{$BaseHref}emergency-services/hospitals" title="Health">
                                 <img src="{$ThemeDir}/images/svg/Health.svg">
                                 <%-- <i class="fa fa-ambulance fa-4x"></i> --%>
                                 <p>Health</p>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-xs-4">
                         <div class="jumbotron">
-                            <a href="" title="Fire">
+                            <a href="{$BaseHref}emergency-services/fire-services" title="Fire">
                                 <img src="{$ThemeDir}/images/svg/Fire.svg">
                                 <%-- <i class="fa fa-fire fa-4x"></i> --%>
                                 <p>Fire</p>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="col-xs-4">
                         <div class="jumbotron">
-                            <a href="" title="Police">
+                            <a href="{$BaseHref}emergency-services/police-hotlines" title="Police">
                                 <img src="{$ThemeDir}/images/svg/Police.svg">
                                 <%-- <i class="fa fa-taxi fa-4x"></i> --%>
                                 <p>Police</p>

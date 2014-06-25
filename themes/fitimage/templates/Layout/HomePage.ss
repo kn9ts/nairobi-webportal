@@ -1,4 +1,4 @@
-<!-- Who the fuck is NCC?? -->
+<!-- NCC DESCRIPTION DIRECT LINK -->
 <div class="row row-close-btn">
     <button type="button" class="close hidden-xs hidden-sm" aria-hidden="true">&times;</button>
     <div class="col-xs-12">
@@ -110,7 +110,7 @@
         <div id="mini-menu" class="row mini-menu $ClassName">
             <% if $Children %>
                 <% loop $Children %>
-                <% if $ClassName = MiniSection || $ClassName = MapsPage %>
+                <% if $ClassName = MiniSection || $ClassName = MapsPage || $ClassName = DownloadsPage  %>
                 <a href="$Link">
                     <div class="col-xs-6 col-sm-3 col-md-3 panel-{$bgColor}-bg">
                         <div class="panel panel-default">

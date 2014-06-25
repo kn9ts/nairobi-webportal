@@ -15,13 +15,12 @@
                 <div class="col-xs-12 col-md-6">
                     <p class="serv">
                         <strong>$Name</strong>
-                        <br>
-                        <em>$StreetAddress</em>
-                        <br>$MailingAddress
-                        <br>$TelephoneNo
-                        <br>$FaxNo
-                        <br>
-                        <span class+ "green">$EmailAddress</span>
+                        <% if $StreetAddress %><br><em>$StreetAddress</em><% end_if %>
+                        <% if $MailingAddress %><br>$MailingAddress<% end_if %>
+                        <% if $TelephoneNo %><br>$TelephoneNo<% end_if %>
+                        <% if $FaxNo %><br>$FaxNo<% end_if %>
+                        <% if $EmailAddress %><br><a href="mailto:{$EmailAddress}" class="green">$EmailAddress</a><% end_if %>
+                        <% if $Website %><a target="_blank" href="{$Website}" class="green">$Website</a><% end_if %>
                     </p>
                 </div>
             <% end_loop %>
