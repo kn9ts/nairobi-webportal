@@ -10,7 +10,7 @@
         <%-- <h4 class="white text-center pull-left">Welcome to Nairobi City County. How can we help you?</h4> --%>
     </div>
     <div class="col-sm-5 col-md-5">
-        <h4 class="text-center grey-bg padding-xs white">Welcome to Nairobi City County Web Portal.</h4>
+        <h4 class="text-center grey-bg padding-xs white">Welcome to Nairobi City County Web Portal</h4>
     </div>
 </div>
 
@@ -42,13 +42,13 @@
 
                         <a href="{$BaseHref}about-the-county/">
                             <div class="col-xs-3 grey-bg hidden-xs about">
-                                <h3 class="icon-login white padding-top">About NCC &nbsp;<i class="fa fa-info-circle fa-1x"></i></h3>
+                                <h3 class="icon-login white padding-top">About Nairobi city county govt. &nbsp;<i class="fa fa-info-circle fa-1x"></i></h3>
                             </div>
                         </a>
                         
                         <a href="{$BaseHref}home/explore-nairobi">
                             <div class="col-xs-3 yellow-bg hidden-xs see">
-                                <h3 class="icon-gallery grey padding-top">Explore City&nbsp;<i class="fa fa-th fa-1x"></i></h3>
+                                <h3 class="icon-gallery grey padding-top">Explore Nairobi&nbsp;<i class="fa fa-th fa-1x"></i></h3>
                             </div>
                          </a>
                         <%-- <div class="col-xs-1 invisible opacity"></div> --%>

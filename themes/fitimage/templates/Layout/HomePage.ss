@@ -10,8 +10,8 @@
                         <img src="{$ThemeDir}/images/ncclogo-blue.png" max-width="60px" class="img-responsive">
                     </div>
                     <div class="col-xs-12 col-sm-10 col-lg-10 padding-top">
-                        <a href="about-the-county" class="uppercase abtncc text-center">
-                            <h4>About Nairobi City County Government</h4>
+                        <a href="explore-nairobi" class="uppercase abtncc text-center">
+                            <h4>Explore Nairobi County</h4>
                         </a>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                 <div class="row main-menu">
                     <% if $Children %>
                         <% loop $Children %>
-                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage %>
+                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage || $ClassName = CountyOperationsPage || $ClassName = RedirectorPage %>
                         <div class="col-xs-12 col-sm-6 col-md-6 {$ClassName}-menu">
                             <a href="$Link">
                                 <div class="panel panel-default">
