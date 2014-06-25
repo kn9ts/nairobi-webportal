@@ -329,10 +329,10 @@ class BlogHolder_Controller extends BlogTree_Controller {
      */
     public function PaginatedPages() {
     	$blogHolderId = $this->ID;
-    	$list = BlogEntry::get()->filter(array("ParentID" => "{$blogHolderId}"));
-		$paginatedItems = new PaginatedList($list, $this->request);
-		$paginatedItems->setPageLength(4);
+    	$list = BlogEntry::get()->filter(array("ParentID" => "{$blogHolderId}"))->sort('Date DESC');
+	$paginatedItems = new PaginatedList($list, $this->request);
+	$paginatedItems->setPageLength(4);
     	return $paginatedItems;
-	}
+}
 
 }
