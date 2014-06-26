@@ -292,7 +292,8 @@ h1 blockquote {
     position: fixed;
     /*bottom: 0;*/
     left: 0;
-    width: 101.5%;
+    width: 100.5%;
+    margin: 0;
     height: auto;
     z-index: 390;
     background: #232323;
@@ -301,6 +302,7 @@ h1 blockquote {
 /*Breadcrumbs navbar*/
  .top {
     top: 0;
+    margin: 0
 }
 .breadcrumbs-navbar small.bread ol {
     background: none;
@@ -310,9 +312,6 @@ h1 blockquote {
 }
 .breadcrumbs-navbar small.bread ol li.active {
     /*color: #FFDE00;*/
-}
-/*Needs more spacing on smaller devices*/
- @media(max-width: 768px) {
 }
 /**** THE NAV MENU *****/
  .bottom {
@@ -865,6 +864,38 @@ color: white;
 }
 .overlay {
     display: none;
+}
+
+/*THE NOTIFICATION BAR*/
+.notification-bar{
+    width: 102%;
+    padding: .3em
+}
+.notification-bar h5{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.notification-bar a, .notification-bar a:visited{
+    color: black
+}
+.notification-bar .close{
+    top: 0;
+    right: 2%
+}
+BODY:not(.HomePage) {
+    background: none;
+}
+@media(min-width: 768px) {
+    .notification-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: .65em;
+        z-index: 399;
+        /*opacity: .75;*/
+        margin: 0;
+    }
 }
 /* Category Item / Categories of Data
 * --------------------------*/

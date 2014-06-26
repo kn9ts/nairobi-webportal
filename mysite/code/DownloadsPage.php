@@ -22,18 +22,11 @@ class DownloadsPage extends MiniSection {
         // Create a default configuration for the new GridField, allowing record editing
         $config = GridFieldConfig_RelationEditor::create();
 
-        // Set the names and data for our gridfield columns
-        // $config->getComponentByType('GridFieldDataColumns')->setDisplayFields(array(
-        //     'Name' => 'Name',
-        //     'Albums.Title'=> 'Album' // Retrieve from a has-one relationship
-        //     // Title Name of the album
-        // ));
-
         // Create a gridfield to hold the student relationship    
         $DownloadsList = new GridField(
             'Downloads', // Field name
             'Downloads', // Field title
-            $this->Downloads()->merge($this->getAllDownloads()), // List of all related students
+            $this->Downloads(), //->merge($this->getAllDownloads()), // List of all related students
             $config
         );
 
@@ -44,7 +37,7 @@ class DownloadsPage extends MiniSection {
         return $fields;
 	}
 
-    public function getAllDownloads() {
+    public function getDocumentDownloads() {
         $folder = DataObject::get('Folder')->filter(array('Name'=>'Documents'));
         $downloads = DataObject::get()->filter(array('ClassName'=>'File', 'ParentID'=>'{$folder->ID}'));
         return $downloads;

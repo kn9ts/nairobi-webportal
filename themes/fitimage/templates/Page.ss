@@ -75,6 +75,9 @@
     <% include BreadcrumbsNavbar %>
     <%-- <% end_if %> --%>
 
+    <%-- THE NOTIFICATION BAR --%>
+    <% include NotificationBar %>
+
     <!--Site page header, only available on the homepage-->
     <% if $ClassName = HomePage %>
     <% include PageHeader %>

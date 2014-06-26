@@ -33,7 +33,23 @@ $(function() {
         if ($('body').hasClass('HomePage')) {
             setTimeout(hidePageMenus, 1000)
         };
+
+        //Slide Down the notification bar if it exists
+        if ($('.notification-bar')) {
+            setTimeout(function() {
+                $('.notification-bar').removeClass('hidden').slideDown().on("click", '.close', function() {
+                    $(this).parent().slideUp();
+                });
+            }, 3000);
+        }
     });
+    // Hide the notification bar on page load
+    $('.notification-bar').hide();
+    setInterval(function() {
+        $('.notification-bar').slideToggle(function() {
+            // Do something
+        })
+    }, 25000);
 
     //Resize the background image to the size of the body
     if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder') && window.innerWidth >= 768) {

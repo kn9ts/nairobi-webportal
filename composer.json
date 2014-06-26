@@ -6,11 +6,9 @@
 		"silverstripe/cms": "3.1.5",
 		"silverstripe/framework": "3.1.5",
 		"silverstripe-themes/simple": "*",
-		"jeffwhitfield/silverstripe-bootstrap-theme": "dev-master",
 		"silverstripe/blog": "dev-master",
-		"silverstripe-themes/blackcandy": "dev-master",
-		"unclecheese/eventcalendar": "dev-master",
-		"silverstripe/googlesitemaps": "dev-master"
+		"silverstripe/googlesitemaps": "dev-master",
+		"silverstripe/widgets": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600	

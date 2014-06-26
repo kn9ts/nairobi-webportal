@@ -27,7 +27,7 @@
                     <% loop $Children %>
                     <%-- <% if $ClassName = HomePageMenu %> --%>
                     <div class="nav-icon {$LinkingMode}">
-                        <a href="$Link" cla>
+                        <a href="$Link">
                             <i class="fa {$IconType} fa-2x"></i>
                             <p>$MenuTitle.XML</p>
                         </a>
