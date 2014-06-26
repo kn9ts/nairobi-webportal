@@ -38,7 +38,7 @@ class HomePage extends Page {
             )
         );
         $fields->addFieldToTab('Root.Notifier', new TextField('Message', 'Notification Message'));
-        $fields->addFieldToTab('Root.Notifier', new TextField('Link', 'Website Link'));
+        $fields->addFieldToTab('Root.Notifier', new TextField('GoToLink', 'Website Link'));
         $fields->addFieldToTab('Root.Notifier', 
         	new DropdownField(
                 'Display',
