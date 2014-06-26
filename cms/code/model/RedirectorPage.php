@@ -9,20 +9,16 @@ class RedirectorPage extends Page {
 	private static $description = 'Redirects to a different internal page';
 	
 	private static $db = array(
-		"bgColor" => "Text", 
-        "IconType" => "Text",
 		"RedirectionType" => "Enum('Internal,External','Internal')",
 		"ExternalURL" => "Varchar(2083)" // 2083 is the maximum length of a URL in Internet Explorer.
 	);
 	
 
-	private static $singular_name = 'Epayments Redirector Page';
-    private static $plural_name = 'Epayments Redirector Page ';
+	private static $singular_name = 'Redirector Page';
+    private static $plural_name = 'Redirector Pages';
 
 	private static $defaults = array(
-		"RedirectionType" => "Internal",
-		'IconColor' => 'grey', 
-        'IconType' => 'fa-money'
+		"RedirectionType" => "Internal"
 	);
 	
 	private static $has_one = array(
@@ -134,8 +130,6 @@ class RedirectorPage extends Page {
 		
 		// Remove all metadata fields, does not apply for redirector pages
 		$fields->removeByName('Metadata');
-		$fields->addFieldToTab('Root.Main', new TextField('IconColor', 'Icon Color'), 'Content');
-        $fields->addFieldToTab('Root.Main', new TextField('IconType', 'Icon Type'), 'Content');
 		$fields->addFieldsToTab('Root.Main',
 			array(
 				new HeaderField('RedirectorDescHeader',_t('RedirectorPage.HEADER', "This page will redirect users to another page")),

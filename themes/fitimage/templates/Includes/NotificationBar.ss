@@ -1,7 +1,7 @@
 <% with $Level(1) %>
 <% if $Display == "Display" %>
 <%-- <div class="space"></div> --%>
-<div class="row notification-bar {$AlertColor}-bg hidden">
+<div class="row notification-bar {$AlertColor}-bg">
 	<div class="col-xs-12 white text-center uppercase">
 		<%-- <div class="fitimage padding"> --%>
 			<h5>$Message: <a class="yellow" href="{$Link}">CLICK HERE</a></h5>

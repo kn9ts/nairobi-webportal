@@ -678,8 +678,8 @@ P.arrow.grey-arrow I:hover {
     transform: translateZ(0);
 }
 @media (min-width: 768px) {
-    HTML, BODY {
-        /*overflow: hidden;*/
+    BODY {
+        overflow: hidden;
     }
     .homepage {
         position: absolute;
