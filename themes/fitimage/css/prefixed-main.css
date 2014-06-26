@@ -375,7 +375,7 @@ _______________________________________________________________*/
 .menu-slidein-sidebar .menu {
     background-color: #1B1B1B;
 }
-.SN_anchors {
+.menu-slidein-sidebar .SN_anchors, .backtotop {
     background-color: #1B1B1B;
     margin-left: 2em;
     padding-left: 1em;
@@ -384,7 +384,10 @@ _______________________________________________________________*/
     max-height: 400px;
     overflow-y: scroll 
 }
-.SN_anchors a {
+.menu-slidein-sidebar .SN_anchors a {
     border-top: thin solid rgba(120, 120, 120, 1.00);
     display:inline-block;
+}
+.backtotop a{
+    color: #FFDE00;
 }

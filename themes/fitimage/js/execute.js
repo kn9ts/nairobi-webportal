@@ -184,6 +184,16 @@ $(function() {
         });
     }
 
+    if ($.inArray($('body').attr('class'), ['SectionPage', 'CityBylawsPage', 'CountyOperationsPage']) > -1) {
+        $('body .container-fluid').first().find('h2').each(function(index) {
+            var h2id = 'h2_0' + index;
+            var h2title = $(this).text();
+            $(this).attr('id', h2id); // id="h2_01"
+            $('.SN_anchors').prepend('<p class="SN-link"><a href="' + document.URL + '#' + h2id + '" title="' + h2title +'">' + h2title + '</a></p>');
+        });
+        setTimeout(function() { $('.menu-slidein-sidebar').removeClass('hidden'); }, 500);
+    }
+
     // Google Analytics: change UA-XXXXX-X to be your site's ID. 
     //- (function(b, o, i, l, e, r) {
     //-     b.GoogleAnalyticsObject = l;
