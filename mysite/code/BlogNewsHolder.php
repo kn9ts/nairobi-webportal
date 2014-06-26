@@ -4,6 +4,11 @@ if(class_exists("BlogHolder")) {
 
 	class BlogNewsHolder extends BlogHolder{
 
+		private static $singular_name = 'News BlogHolder Page';
+    	private static $plural_name = 'News BlogHolder Pages ';
+    	private static $description = "Displays listings of blog entries only";
+    	// private static $allowed_children = array('BlogEntry');
+
 		private function extraStatic() {
 			return array(
 	            'db' => array(

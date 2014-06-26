@@ -1,16 +1,17 @@
 <div data-part="breadcrumbs-navbar" id="helper-navbar" class="row fixed-nav-bar top breadcrumbs-navbar">
     <div class="col-xs-12 welcome-nav">
         <div class="row">
-            <div class="col-xs-1 hidden-xs">&nbsp;</div>
-            <div class="col-xs-12 col-sm-9">
+            <div class="col-xs-2 col-sm-1">
+                <% if $ClassName = GalleryPage || $ClassName = EmergencyServicesPage || $ClassName = AddressCategory %>
+                <a href="$BaseHref" <% if $ClassName = EmergencyServicesPage || $ClassName = AddressCategory %>class="hidden-md hidden-lg" <% end_if %>>
+                    <h4 class="no-padding no-margin">
+                        <%-- <i class="fa fa-home pull-left">&nbsp;</i> --%> Home
+                    </h4>
+                </a>
+                <% end_if %>
+            </div>
+            <div class="col-xs-10 col-sm-9">
                 <div class="container">
-                    <% if $ClassName = GalleryPage %>
-                    <a href="$BaseHref">
-                        <h4 class="no-padding no-margin">
-                            <i class="fa fa-home vertical-align">&nbsp;</i> Home
-                        </h4>
-                    </a>
-                    <% end_if %>
                     <%-- $Breadcrumbs --%>
                     <%-- <h5 class="yellow">
                         <i class="fa fa-arrow-down fa-2x">&nbsp;</i>Hide menu &amp; see Nairobi.

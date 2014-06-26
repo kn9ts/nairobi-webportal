@@ -9,6 +9,16 @@ $(function() {
             if (h < window.innerHeight) h = window.innerHeight;
             return h;
         });
+
+        //Resize the background image to the size of the body
+        if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder')) {
+            $('#page-header').height(function() {
+                var h = window.innerWidth > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
+                return h; //parseInt(h) + 1;
+            });
+        } else {
+            // $('.page-menu').remove();
+        }
     }
 
     var hidePageMenus = function(bool) {
@@ -43,6 +53,7 @@ $(function() {
             }, 3000);
         }
     });
+
     // Hide the notification bar on page load
     $('.notification-bar').hide();
     setInterval(function() {
@@ -50,16 +61,6 @@ $(function() {
             // Do something
         })
     }, 25000);
-
-    //Resize the background image to the size of the body
-    if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder') && window.innerWidth >= 768) {
-        $('#page-header').height(function() {
-            var h = window.innerWidth > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
-            return h; //parseInt(h) + 1;
-        });
-    } else {
-        // $('.page-menu').remove();
-    }
 
     var once = 0;
     var windowAnimation = function() {
