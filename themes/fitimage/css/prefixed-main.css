@@ -54,7 +54,7 @@ __________________________________________________________*/
 .fitimage h2 {
     font-weight: normal;
     font-size: 1.5em;
-    text-transform: lowercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 0.01em;
     color: #FFDE00;
     background-color: #1B1B1B;
