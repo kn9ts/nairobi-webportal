@@ -63,6 +63,13 @@
     <% end_if %>
 </head>
 <body class="$ClassName">
+    <div class="menu-slidein-sidebar hidden">
+        <h4 class="menu padding-sm yellow"><i class="fa fa-bars fa-1x">&nbsp;</i>Menu</h4>
+        <div class="SN_anchors">
+            <p class="SN-link"><a href="#h2_01" tittle="Tourism">Tourism</a></p>
+            <div class="padding-sm yellow"><i class="fa fa-arrow-up fa-1x">&nbsp;</i>Back to Top</div>
+        </div>
+    </div>
     <%-- <% if $ClassName != HomePage %>require-margin<% end_if %> --%>
     <%-- <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %> --%>
 
@@ -75,7 +82,7 @@
     <% include BreadcrumbsNavbar %>
     <%-- <% end_if %> --%>
 
-    <%-- THE NOTIFICATION BAR --%>
+    <!-- THE NOTIFICATION BAR -->
     <% include NotificationBar %>
 
     <!--Site page header, only available on the homepage-->
@@ -178,7 +185,7 @@
             Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
         <% end_if %>
-        
+
     </application-engine>
 
 </body>

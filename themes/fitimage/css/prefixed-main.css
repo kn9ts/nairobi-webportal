@@ -351,3 +351,40 @@ _______________________________________________________________*/
 .fitimage ul li a.assembly {
     background-image: url(../images/icons/05.png);
 }
+/*SIDEBAR FIXED ON THE SIDE*/
+ .menu-slidein-sidebar {
+    position: fixed;
+    top: 15%;
+    right: -22em;
+    width: 25em;
+    overflow: scroll;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    z-index: 999;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    /*background-color: #1B1B1B;*/
+}
+.menu-slidein-sidebar:hover {
+    right: -2em;
+}
+.menu-slidein-sidebar .menu {
+    background-color: #1B1B1B;
+}
+.SN_anchors {
+    background-color: #1B1B1B;
+    margin-left: 2em;
+    padding-left: 1em;
+    margin-top: -11px;
+    padding-top: 1em;
+    max-height: 400px;
+    overflow-y: scroll 
+}
+.SN_anchors a {
+    border-top: thin solid rgba(120, 120, 120, 1.00);
+    display:inline-block;
+}

@@ -11,7 +11,7 @@ class HomePage extends Page {
         'IconType' => 'Varchar',
         'AlertColor' => 'Enum("green, orange, red, yellow, grey, blue")',
         'Message' => 'Varchar(255)',
-        'Link' => 'Varchar(255)', 
+        'GoToLink' => 'Varchar(255)', 
         'Display' => 'Enum("Display, Hidden")'
     );
 
