@@ -180,7 +180,7 @@ __________________________________________________________*/
     border-right-style: solid;
     color: #FFFFFF;
 }
-.fitimage ol li {
+.fitimage ol li, .laws ul li {
     color: #7A7A7A;
     font-style: normal;
     font-size: 0.65em;
@@ -190,10 +190,14 @@ __________________________________________________________*/
     margin-left: -2em;
     padding: 0.5em;
     list-style-type: none;
+    border-left: 1em solid rgba(0, 66, 28, 1.00);
     background-color: #FFFFFF;
-    border-left: 1em solid #00421C;
     box-shadow: 1px 1px 3px #C7C7C7;
     -webkit-box-shadow: 1px 1px 3px #C7C7C7;
+}
+.laws ul li {
+    width:80%;
+    border:none;
 }
 .fitimage td {
     border: none;
@@ -382,12 +386,12 @@ _______________________________________________________________*/
     margin-top: -11px;
     padding-top: 1em;
     max-height: 400px;
-    overflow-y: scroll 
+    overflow-y: scroll
 }
 .menu-slidein-sidebar .SN_anchors a {
     border-top: thin solid rgba(120, 120, 120, 1.00);
     display:inline-block;
 }
-.backtotop a{
+.backtotop a {
     color: #FFDE00;
 }
