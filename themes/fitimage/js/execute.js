@@ -107,7 +107,8 @@ $(function() {
         if (window.innerWidth >= 768) {
             e.preventDefault();
             $('.overlay.for-email').fadeToggle(function() {
-                $('.email-form').show().toggleClass('show-email-form').css('background-color', function() {
+                $('.email-form').show(function() {
+                    $(this).toggleClass('show-email-form');
                     if(!$(this).hasClass('show-email-form')) $(this).hide();
                     return $(this).css('background-color');
                 });
