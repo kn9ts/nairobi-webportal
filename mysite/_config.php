@@ -33,3 +33,7 @@ Requirements::set_combined_files_enabled(false);
 // ini_set("display_errors", "Off");
 // ini_set("log_errors", "On");
 // ini_set("error_log", "/path/to/errorlog");
+RedirectorPage::add_extension('RedirectorExtension');
+if(class_exists("BlogNewsHolder")) {
+	BlogNewsHolder::add_extension('RedirectorExtension');
+}
