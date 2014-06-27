@@ -357,7 +357,7 @@ _______________________________________________________________*/
     top: 15%;
     right: -22em;
     width: 25em;
-    overflow: scroll;
+    /*overflow: scroll;*/
     margin-bottom: 2em;
     padding-left: 1em;
     padding-right: 1em;
