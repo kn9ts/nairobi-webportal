@@ -396,21 +396,28 @@ _______________________________________________________________*/
     color: #FFDE00;
 }
 /*COUNTY LAWS PAGE*/
-.section-menu .panel-body{
+ .section-menu .panel-body {
     border-radius: 0;
     background-color: #27569C;
     color: white;
 }
-.section-menu .panel-body .page-menu-title > div{
+.section-menu .panel-body .page-menu-title > div {
     border-bottom: none;
-    padding: .5em 0; 
+    padding: .5em 0;
 }
-.section-menu a, .section-menu i{
+.section-menu a, .section-menu i {
     color: white
 }
-.section-menu h4{
+.section-menu h4 {
     color: white;
     background: none;
     font-size: 1em;
     font-weight: bold;
+}
+/*Non-destructive CSS editing for the listing of addresses*/
+.AddressCategory .fitimage .row > div[class*=col] {
+    padding: 0
+}
+.AddressCategory .fitimage .serv {
+    padding: .75em
 }
