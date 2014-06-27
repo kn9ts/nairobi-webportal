@@ -837,7 +837,7 @@ color: white;
 }
 @media (min-width: 768px) {
     .email-form {
-        position: fixed;
+        position: absolute;
         width: 60%;
         top: 120%;
         left: 20%;

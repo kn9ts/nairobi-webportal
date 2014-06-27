@@ -4,11 +4,13 @@ $(function() {
     $(window).on("load", app.initialize);
 
     if (window.innerWidth >= 768) {
-        $('.page-content').css('height', function() {
-            var h = $(this).height();
-            if (h < window.innerHeight) h = window.innerHeight;
-            return h;
-        });
+        if($('body').hasClass('EventHolder')) {
+            $('.page-content').css('height', function() {
+                var h = $(this).height();
+                if (h < window.innerHeight) h = window.innerHeight;
+                return h;
+            });
+        }
 
         //Resize the background image to the size of the body
         if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder')) {

@@ -34,11 +34,7 @@
                 <div class="row main-menu">
                     <% if $Children %>
                         <% loop $Children %>
-<<<<<<< HEAD
-                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage || $ClassName = CountyOperationsPage || $ClassName = RedirectorPage || $ClassName = RedirectorExtendedPage || $ClassName = BlogNewsHolder || $ClassName = CountyLawsHolder %>
-=======
-                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage || $ClassName = CountyOperationsPage || $ClassName = EpaymentsRedirectorPage || $ClassName = BlogNewsHolder %>
->>>>>>> 16f30ffff9613a1693e7a326d10681ef109eaedd
+                        <% if $ClassName = SectionHolder || $ClassName = SectionPage || $ClassName = TenderHolder || $ClassName = EventHolder || $ClassName = CityBylawsPage || $ClassName = CountyOperationsPage || $ClassName = EpaymentsRedirectorPage || $ClassName = BlogNewsHolder || $ClassName = CountyLawsHolder %>
                         <div class="col-xs-12 col-sm-6 col-md-6 {$ClassName}-menu">
                             <a href="$Link">
                                 <div class="panel panel-default">
