@@ -4,7 +4,7 @@ class HomePage extends Page {
 
 	// Some defaults
 	private static $description = "HomePage: Mother of all pages";
-    private static $allowed_children = array('SectionHolder', 'TenderHolder', 'EventHolder', 'MiniSection', 'GalleryPage', 'SectionPage', 'CityBylawsPage', 'MapsPage', 'AddressBook', 'DownloadsPage', 'RedirectorPage', 'RedirectorExtendedPage', 'BlogNewsHolder');
+    private static $allowed_children = array('SectionHolder', 'TenderHolder', 'EventHolder', 'MiniSection', 'GalleryPage', 'SectionPage', 'CityBylawsPage', 'MapsPage', 'AddressBook', 'DownloadsPage', 'RedirectorPage', 'RedirectorExtendedPage', 'BlogNewsHolder', 'CountyLawsHolder');
 
     // We can use the $db array to add extra fields to the database.
     private static $db = array(
