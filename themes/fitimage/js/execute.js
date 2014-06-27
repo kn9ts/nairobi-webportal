@@ -29,10 +29,10 @@ $(function() {
         if ($.inArray($('body').attr('class'), ['SectionPage', 'CityBylawsPage', 'CountyOperationsPage']) > -1) {
             $('body .container-fluid').first().find('h2').each(function(index) {
                 //Check to see if the H2 already has an ID
-                var h2id = $(this).attr('id') !== null ? $(this).attr('id') : 'h2_0' + index;
+                var h2id = $(this).attr('id') !== undefined ? $(this).attr('id') : 'h2_0' + index;
                 var h2title = $(this).text();
                 //If the H2 did not have an ID, give it one
-                if ($(this).attr('id') == null) $(this).attr('id', h2id); // id="h2_01"
+                if ($(this).attr('id') == undefined) $(this).attr('id', h2id); // id="h2_01"
                 $('.SN_anchors').prepend('<p class="SN-link"><a href="' + document.URL + '#' + h2id + '" title="' + h2title + '">' + h2title + '</a></p>');
             });
             setTimeout(function() {
