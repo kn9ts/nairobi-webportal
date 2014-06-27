@@ -16,6 +16,7 @@ $(function() {
         if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder')) {
             $('#page-header').height(function() {
                 var h = window.innerWidth > 768 ? $('.homepage').height() * 1.1 : $(window).height() / 2;
+                $('html, body').height(window.innerHeight * 1.5).css('overflow', 'hidden');
                 return h; //parseInt(h) + 1;
             });
         } else {

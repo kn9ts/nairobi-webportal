@@ -42,17 +42,7 @@ var app = {
         app.doFunctions();
     },
     doFunctions: function() {
-        //do something (check if user is already signed in, check for internet connection, resize app e.t.c)
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'nccnew'; // required: replace example with your forum shortname
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        });
+        
     },
     /** 
      * LOCAL STORAGE MANAGEMENT FUNCTION 

@@ -865,20 +865,22 @@ color: white;
 .overlay {
     display: none;
 }
-
+.email-yellow{
+    background: #FFDE00;
+}
 /*THE NOTIFICATION BAR*/
-.notification-bar{
+ .notification-bar {
     width: 102%;
     padding: .3em
 }
-.notification-bar h5{
+.notification-bar h5 {
     font-size: 1.5em;
     font-weight: bolder;
 }
-.notification-bar a, .notification-bar a:visited{
+.notification-bar a, .notification-bar a:visited {
     color: black
 }
-.notification-bar .close{
+.notification-bar .close {
     top: 0;
     right: 2%
 }
@@ -886,7 +888,7 @@ BODY:not(.HomePage) {
     background: none;
 }
 @media(min-width: 768px) {
-    .notification-bar{
+    .notification-bar {
         position: fixed;
         top: 0;
         left: 0;
@@ -1444,6 +1446,10 @@ text-align: center;*/
 }
 .pager-space {
     margin-bottom: 50px
+}
+/*Downloads listing small fix*/
+.DownloadsPage .post-wrapper .post{
+    max-height: 150px;
 }
 /*Horizontal bordering line on h1-h6 elements
 eg. ----------- Title ------------*/

@@ -15,7 +15,7 @@
                 <div class="col-xs-12">
                     <div class="col-sm-12 col-md-8">
                         <h2 class="no-margin no-padding">$Title</h2>
-                        <small class="label label-lg label-success">Opening Date: $StartDate.Long</small>
+                        <small class="label label-lg label-success hidden">Opening Date: $StartDate.Long</small>
                         <%-- <br /> --%>
                         <small class="label label-lg label-danger">Closing Date: $EndDate.Long</small>
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->

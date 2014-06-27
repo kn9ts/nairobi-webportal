@@ -395,3 +395,22 @@ _______________________________________________________________*/
 .backtotop a {
     color: #FFDE00;
 }
+/*COUNTY LAWS PAGE*/
+.section-menu .panel-body{
+    border-radius: 0;
+    background-color: #27569C;
+    color: white;
+}
+.section-menu .panel-body .page-menu-title > div{
+    border-bottom: none;
+    padding: .5em 0; 
+}
+.section-menu a, .section-menu i{
+    color: white
+}
+.section-menu h4{
+    color: white;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+}
