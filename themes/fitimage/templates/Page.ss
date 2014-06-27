@@ -118,17 +118,17 @@
                 <div class="col-xs-12 yellow-bg">
                     <% if $Response %>
                     <div class="grey-bg yellow text-center">
+                        <div class="grey-bg yellow text-center">
+                            <h2 class="padding-xs uppercase no-margin">General Enquiries</h2>
+                            <small><span class="green">Call us:&nbsp;</span>020-344194 or 0725-624489</small>
+                            <small><span class="green">Email:&nbsp;</span>info@nairobi.go.ke</small>
+                        </div>
                         <h1 class="padding-xs uppercase">$Response</h1>
                     </div>
                     <% end_if %>
                     <div class="email-yellow col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-lg-offset-1 col-lg-10 space">
                         <h2 class="uppercase">Write to us:</h2>
                         $ContactForm
-                        <div class="grey-bg yellow text-center">
-                            <h2 class="padding-xs uppercase">General Enquiries</h2>
-                            <small><span class="green">Call us:&nbsp;</span>020-344194 or 0725-624489</small>
-                            <small><span class="green">Email:&nbsp;</span>info@nairobi.go.ke</small>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -82,13 +82,17 @@ $(function() {
 
     var once = 0;
     var windowAnimation = function() {
-        $('.homepage').toggleClass('show-menu').css('background-color', function() {
+        $('.homepage').show(function() {
+            $(this).toggleClass('show-menu');
             var h = $(this).height() + $(this).height() / 8;
             if (document.URL.indexOf('SearchForm') > -1 || window.innerWidth >= 768)
                 if (once <= 0) {
                     // $('body').height(h);
                     once++
                 }
+            if(!$(this).hasClass('show-menu')) setTimeout(function() { 
+                $('.homepage').hide();
+            }, 1000);
             return $(this).css('background-color');
         });
         if (window.innerWidth >= 768) $('.toggle-menu-btn, .page-header').toggleClass('hide-page-header-items');
@@ -103,10 +107,14 @@ $(function() {
         if (window.innerWidth >= 768) {
             e.preventDefault();
             $('.overlay.for-email').fadeToggle(function() {
-                $('.email-form').toggleClass('show-email-form');
+                $('.email-form').show().toggleClass('show-email-form').css('background-color', function() {
+                    if(!$(this).hasClass('show-email-form')) $(this).hide();
+                    return $(this).css('background-color');
+                });
             });
         }
     });
+    $('.email-form, .homepage').hide()
 
     $('.email-form .close, .overlay.for-email').click(function() {
         $('.overlay.for-email').fadeToggle(function() {
