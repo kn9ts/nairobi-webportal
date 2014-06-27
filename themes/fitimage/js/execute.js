@@ -12,6 +12,8 @@ $(function() {
             });
         }
 
+        $('.email-form, .homepage').hide()
+
         //Resize the background image to the size of the body
         if ($('body').hasClass('HomePage') || $('body').hasClass('EventHolder')) {
             $('#page-header').height(function() {
@@ -115,7 +117,6 @@ $(function() {
             });
         }
     });
-    $('.email-form, .homepage').hide()
 
     $('.email-form .close, .overlay.for-email').click(function() {
         $('.overlay.for-email').fadeToggle(function() {
