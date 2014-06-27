@@ -30,7 +30,6 @@
                     <p>&nbsp;An Act of the Nairobi City County Assembly to give statutory effect for limited periods to orders of the Executive Committee Member for Finance imposing any new tax or duty, or creating any new allowance, or altering, or removing any existing tax or duty, or any such rate or allowance and for connected purposes.</p>
                     <p>&nbsp;</p>
                     <h2>4. The Nairobi City County Tax Waivers Administration Act, 2013</h2>
-                    <h2>&nbsp;</h2>
                     <p>An Act of the Nairobi City County to provide for the regulation and administration of tax waivers; to give further effect to Article 210 of the Constitution and for connected purposes.</p>
                     <p>&nbsp;</p>
                     <h2>5. The Nairobi City County Flag and other Symbols Act, 2013</h2>

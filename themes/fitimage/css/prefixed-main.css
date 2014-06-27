@@ -150,7 +150,7 @@ __________________________________________________________*/
     font-weight: bolder;
     line-height: 0.95em;
     margin-top: 0;
-    padding-left: 7em;
+    padding-left: 5.5em;
     padding-bottom: 47px;
     max-height: 5.5em;
     background-image: url(../images/Icon_PH.png);
@@ -159,7 +159,7 @@ __________________________________________________________*/
     background-attachment: scroll;
     background-position: 15px -25%;
     background-clip: padding-box;
-    background-size: 75px;
+    background-size: 55px;
     overflow-y: hidden;
 }
 .fitimage ul li p {
