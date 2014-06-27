@@ -1,20 +1,24 @@
 <!--
 /**
- * Developed by Emomentum -- Eugene Mutai & Team
+ * Developed by Eugene Mutai & Team (From Emomentum)
  * Email: eugenemutai@gmail.com
+ * Twitter: @jheneknights
  * Site: http://www.knightslab.com
- * Date: 06/04/14 (Updated on 06/05/14)
+ * Date: 06/04/14 (Updated on 06/05/14, Commencement Date)
  * Time: 9:00 AM
  * Description: Nairobi County Website and portal.
  *
  * User Experience(UX) and "how beautiful the site looks!" done by:
  * 
+ * ------------- THE TEAM: Eugene Mutai, Kelvin Kim, Yogi Unleashed ---------------------
+ *
  *  888888 88 888888 88 8b    d8    db     dP""b8 888888     .dP"Y8 888888 88   88 8888b.  88  dP"Yb  .dP"Y8 
  *  88__   88   88   88 88b  d88   dPYb   dP   `" 88__       `Ybo."   88   88   88 8I  Yb  88 dP   Yb `Ybo." 
  *  88""   88   88   88 88YbdP88  dP__Yb  Yb  "88 88""       o.`Y8b   88   Y8   8P 8I  dY  88 Yb   dP o.`Y8b 
  *  88     88   88   88 88 YY 88 dP""""Yb  YboodP 888888     8bodP'   88   `YbodP' 8888Y"  88  YbodP  8bodP' 
  *
  * Website: http://www.fitimagestudios.com
+ * Copyright (C) 2014
  *
 -->
 <!DOCTYPE html>
