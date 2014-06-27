@@ -1,5 +1,5 @@
 <% if $FitimagePhotos %> 
-<div class="gallery-container space">
+<div class="gallery-container">
 	<% loop $PaginatedPages %>
 	<%-- <% if $URL %> --%>
 	<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image-container col-{$MultipleOf(3,1)}">

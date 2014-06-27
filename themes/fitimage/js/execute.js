@@ -185,7 +185,7 @@ $(function() {
                 isAnimated: true,
                 columnWidth: container.children().width(),
                 gutter: 0,
-                isFitWidth: true
+                // isFitWidth: true
             });
             var msnry = container.data('masonry');
             console.log(msnry);
